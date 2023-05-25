@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
 
-$actor: 'Actor', sans-serif;
+//Colors
 $phil-blue: #140149;
+
+//Fonts
+$actor: 'Actor', sans-serif;
 $poppins: 'Poppins', sans-serif;
+
+
+//Device Sizing
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1024px;
