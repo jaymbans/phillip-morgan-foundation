@@ -1,0 +1,54 @@
+@import '../helpers/placeholders';
+@import '../helpers/variables';
+
+nav {
+  @extend %flex;
+  align-items: center;
+  padding: 20px 40px;
+  width: 100%;
+
+  .nav-left {
+    @extend %flex;
+    align-items: center;
+    width: 25%;
+
+    h4 {
+      text-transform: uppercase;
+      font-family: $actor;
+      color: $phil-blue;
+      max-width: 235px;
+      text-align: center;
+    }
+  }
+
+  .nav-mid {
+    width: 50%;
+    @extend %flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+
+    button {
+      background: none;
+      font-size: 20px;
+      font-family: $poppins;
+      color: $phil-blue;
+      font-weight: bold;
+    }
+  }
+
+  .nav-right {
+    width: 25%;
+    @extend %flex;
+    justify-content: flex-end;
+
+    button {
+      background: $phil-blue;
+      color: white;
+      font-size: 25px;
+      width: 144px;
+      height: 56px;
+      @extend %center;
+      font-weight: 400;
+    }
+  }
+}
