@@ -4,7 +4,24 @@ import blueLogo from '../media/blue_small_logo.png'
 
 function Navbar() {
   const activateHamburgerMenu = (e) => {
-    console.log(e)
+    // select menu
+    const menu = document.getElementById('hamburger')
+
+    const navLinks = document.querySelector('.nav-mid')
+
+    // select bars
+    const barArray = Array.from(menu.children);
+
+    // toggle activeness
+    if (Array.from(barArray[0].classList).includes('active')) {
+      barArray.forEach(bar => bar.classList.remove('active'));
+      navLinks.classList.remove('active')
+    } else {
+      barArray.forEach(bar => bar.classList.add('active'))
+      navLinks.classList.add('active')
+    }
+
+    return
   }
 
   return (
@@ -24,9 +41,12 @@ function Navbar() {
       </div>
       <div className="nav-right">
         <button>GIVE</button>
-        <span className='bar'></span>
-        <span className='bar'></span>
-        <span className='bar'></span>
+
+        <button onClick={activateHamburgerMenu} id="hamburger">
+          <span className='bar'></span>
+          <span className='bar'></span>
+          <span className='bar'></span>
+        </button>
       </div>
     </nav>
   )
