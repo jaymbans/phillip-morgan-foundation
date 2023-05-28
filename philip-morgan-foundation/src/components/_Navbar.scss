@@ -41,15 +41,16 @@ nav {
     justify-content: space-between;
     padding: 0px 20px;
 
-    button {
+    a {
       background: none;
       font-size: 20px;
       font-family: $poppins;
       color: $phil-blue;
       font-weight: bold;
+      text-decoration: none;
     }
 
-    & button:last-child {
+    & a:last-child {
       display: none;
     }
   }
@@ -59,14 +60,16 @@ nav {
     @extend %flex;
     justify-content: flex-end;
 
-    button {
+    a {
       background: $phil-blue;
       color: white;
       font-size: 25px;
       width: 144px;
       height: 56px;
+      font-family: $poppins;
       @extend %center;
       font-weight: 400;
+      text-decoration: none;
     }
   }
 

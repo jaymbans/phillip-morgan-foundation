@@ -1,6 +1,7 @@
 import React from 'react'
 import './_Navbar.scss'
-import blueLogo from '../media/blue_small_logo.png'
+import blueLogo from '../media/blue_small_logo.png';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const activateHamburgerMenu = (e) => {
@@ -33,14 +34,14 @@ function Navbar() {
         </h4>
       </div>
       <div className="nav-mid">
-        <button>HOME</button>
-        <button>ABOUT</button>
-        <button>EVENTS</button>
-        <button>CONTACT</button>
-        <button>DONATE</button>
+        <Link to='/'>HOME</Link>
+        <Link to='about'>ABOUT</Link>
+        <Link to='events'>EVENTS</Link>
+        <Link to='contact'>CONTACT</Link>
+        <Link to='donate'>DONATE</Link>
       </div>
       <div className="nav-right">
-        <button>GIVE</button>
+        <Link to='donate'>GIVE</Link>
 
         <button onClick={activateHamburgerMenu} id="hamburger">
           <span className='bar'></span>
