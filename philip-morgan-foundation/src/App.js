@@ -1,11 +1,11 @@
 import './main.scss'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import NotFound from "./components/NotFound";
 import About from "./components/About";
 import Events from "./components/Events";
 import Contact from "./components/Contact";
+import Donate from "./components/Donate"
 
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/events" element={<Events />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/donate" element={<Donate />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
