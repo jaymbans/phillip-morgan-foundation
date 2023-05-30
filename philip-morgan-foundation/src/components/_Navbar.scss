@@ -40,6 +40,8 @@ nav {
     @extend %flex;
     justify-content: space-between;
     padding: 0px 20px;
+    z-index: 999;
+    background: white;
 
     a {
       background: none;

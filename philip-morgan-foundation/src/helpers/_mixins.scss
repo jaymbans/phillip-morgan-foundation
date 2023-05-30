@@ -1,0 +1,7 @@
+@mixin btn($background, $textColor) {
+  background: $background;
+  color: $textColor;
+  font-family: $poppins;
+  text-decoration: none;
+  font-weight: bold;
+}

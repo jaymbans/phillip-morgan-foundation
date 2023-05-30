@@ -1,3 +1,7 @@
+:root {
+  font-size: 16px;
+}
+
 //Resetting to default styling
 * {
   border: none;
@@ -11,5 +15,15 @@ button {
 }
 
 h4 {
-  font-size: 25px;
+  font-size: 1.5rem;
+}
+
+section {
+  min-height: 100vh;
+}
+
+@media only screen and (max-width: 900px) {
+  :root {
+    font-size: 14px;
+  }
 }

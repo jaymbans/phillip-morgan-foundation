@@ -35,13 +35,13 @@ function Navbar() {
       </div>
       <div className="nav-mid">
         <Link to='/'>HOME</Link>
-        <Link to='about'>ABOUT</Link>
-        <Link to='events'>EVENTS</Link>
-        <Link to='contact'>CONTACT</Link>
-        <Link to='donate'>DONATE</Link>
+        <Link to='/about'>ABOUT</Link>
+        <Link to='/events'>EVENTS</Link>
+        <Link to='/contact'>CONTACT</Link>
+        <Link to='/donate'>DONATE</Link>
       </div>
       <div className="nav-right">
-        <Link to='donate'>GIVE</Link>
+        <Link to='/donate'>GIVE</Link>
 
         <button onClick={activateHamburgerMenu} id="hamburger">
           <span className='bar'></span>

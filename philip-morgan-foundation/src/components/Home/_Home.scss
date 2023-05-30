@@ -1,0 +1,244 @@
+@import '../../helpers/placeholders';
+@import '../../helpers/variables';
+@import '../../helpers/mixins';
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 50vh;
+  background: url('https://static6.depositphotos.com/1107278/602/i/950/depositphotos_6028923-stock-photo-man-in-field.jpg');
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 5%;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.654);
+  }
+
+  main {
+    width: 90%;
+    height: 80%;
+    font-family: $arimo;
+    max-width: 930px;
+
+
+    .title {
+      position: relative;
+      color: white;
+      text-align: right;
+
+      h1 {
+        font-weight: bold;
+        font-size: 2.6rem;
+      }
+
+      h5 {
+        font-size: 1.7rem;
+        font-weight: normal;
+        margin-bottom: 1.5%;
+      }
+
+      @media (max-width: 900px) {
+        text-align: center;
+      }
+    }
+
+    a {
+      @include btn(white, $phil-blue);
+      display: inline-block;
+      text-align: center;
+      vertical-align: center;
+      padding: 7px;
+    }
+
+    .title-desc {
+      display: flex;
+      color: white;
+      position: relative;
+      justify-content: center;
+      align-items: end;
+      margin-top: 5%;
+
+      p {
+        font-style: italic;
+        width: fit-content;
+        font-size: 1.7rem;
+      }
+    }
+  }
+
+}
+
+.homepage-section {
+  margin: 65px auto;
+  max-width: 1200px;
+
+  h1 {
+    font-family: $arimo;
+    color: $phil-blue;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 70px;
+    position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-style: italic;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 140px;
+      height: 3px;
+      background: $phil-blue;
+      bottom: -5px;
+    }
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .card {
+      background: white;
+      width: 345px;
+      margin: 10px 1%;
+      height: 490px;
+      border-radius: 51px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 10px 30px;
+      box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
+      border-top: 9px solid $phil-blue;
+
+      .img-container {
+        background: $phil-blue;
+        height: 140px;
+        width: 140px;
+        border-radius: 50%;
+        position: relative;
+        @extend %center;
+
+        &::after {
+          content: "";
+          position: absolute;
+          background: none;
+          border: 3px solid white;
+          height: 120px;
+          width: 120px;
+          border-radius: inherit;
+        }
+
+        img {
+          width: 70px;
+        }
+      }
+
+      h5,
+      p {
+        font-family: $poppins;
+      }
+
+      h5 {
+        font-size: 28px;
+        color: $phil-blue;
+        text-transform: capitalize;
+      }
+
+      p {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    &>div:nth-of-type(1) {
+      height: 112px;
+      align-items: center;
+      display: flex;
+
+      img {
+        height: 100px;
+      }
+
+      h2 {
+        font-family: $poppins;
+        text-transform: uppercase;
+        color: $phil-blue;
+      }
+
+    }
+
+    .events {
+      display: flex;
+      justify-content: center;
+
+      .tile {
+        background: #CBC5DB;
+        width: 364px;
+        height: 393px;
+        margin: 0 5px;
+        padding: 15px;
+        font-family: $poppins;
+        color: $phil-blue;
+
+        &:first-child {
+          background: $phil-blue;
+        }
+
+        h1 {
+          margin: 0;
+          justify-content: start;
+          font-family: inherit;
+          font-style: inherit;
+          font-weight: normal;
+
+          &:after {
+            display: none;
+          }
+        }
+
+        p.bolded {
+          font-weight: bold;
+        }
+
+        p {
+          max-width: 200px;
+          text-transform: capitalize;
+          margin: 10px 0;
+        }
+
+        &:first-child {
+          color: white;
+
+          h1 {
+            color: white;
+          }
+        }
+
+      }
+    }
+
+    a {
+      @include btn($phil-blue, white);
+      display: flex;
+      @extend %center;
+      padding: 5px 10px;
+      width: 100px;
+      margin: 15px auto;
+      text-transform: uppercase;
+    }
+  }
+}
