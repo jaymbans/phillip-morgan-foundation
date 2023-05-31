@@ -27,3 +27,9 @@ section {
     font-size: 14px;
   }
 }
+
+@media only screen and (max-width: 700px) {
+  :root {
+    font-size: 12px;
+  }
+}

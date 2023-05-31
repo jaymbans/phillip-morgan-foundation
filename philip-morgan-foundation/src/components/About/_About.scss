@@ -1,0 +1,288 @@
+@import '../../helpers/_mixins';
+@import '../../helpers/_variables';
+@import '../../helpers/_placeholders';
+
+section {
+  font-family: $bree;
+
+  &>div {
+    padding: 5% 2%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .first {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &>img {
+      position: absolute;
+      bottom: 0;
+      left: 12.5%;
+
+      @media screen and (max-width: 1000px) {
+        display: none;
+      }
+
+    }
+
+    .who {
+      width: 47%;
+      max-width: 700px;
+
+      p {
+        font-family: $poppins;
+        font-size: 1.75rem;
+        margin: 25px 0;
+      }
+    }
+
+    .images {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 100px;
+
+      .row {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .img {
+        margin: 10px;
+        min-width: 250px;
+        height: 200px;
+        border: 1px solid red;
+      }
+    }
+
+  }
+
+  .second {
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      font-size: 2rem;
+    }
+  }
+
+  .join-us {
+    background: #958FA7;
+    color: white;
+
+    &>.row:first-child {
+      h1 {
+        color: white;
+        width: 40%;
+        display: flex;
+        line-height: .5;
+
+      }
+
+      p {
+        width: 60%;
+        max-width: 750px;
+        font-size: 1.5rem;
+      }
+    }
+
+    .row:nth-of-type(2) {
+      justify-content: center;
+      align-items: center;
+      min-height: 425px;
+      position: relative;
+
+      &>div:first-of-type {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 50%;
+
+        h3 {
+          text-align: center;
+          margin-bottom: 10px;
+        }
+
+        form {
+          display: flex;
+          flex-direction: column;
+          width: 80%;
+
+          * {
+            font-family: $poppins;
+          }
+
+          .row {
+            justify-content: space-between;
+
+            input {
+              width: 50%
+            }
+          }
+
+          input {
+            background: none;
+            border: 3px solid white;
+            padding: 5%;
+            border-radius: 20px;
+            margin: 5px;
+
+            &::placeholder {
+              color: white;
+              font-size: 1rem;
+            }
+          }
+
+          button {
+            color: #958FA7;
+            padding: 5%;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: large;
+          }
+        }
+      }
+
+      &>div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .links {
+          a {
+            cursor: pointer;
+
+            img {
+              width: 80px;
+              position: relative;
+              height: auto;
+              margin: 5px;
+            }
+          }
+        }
+      }
+
+      &::after {
+        content: "";
+        background: white;
+        position: absolute;
+        width: 4px;
+        height: 120%;
+        left: 0;
+        bottom: 0;
+      }
+    }
+
+
+  }
+
+  // General selectors
+
+  h1 {
+    color: $phil-blue;
+    font-family: $bree;
+    font-size: 4.5rem;
+  }
+
+  p {
+    font-family: $poppins;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  h3 {
+    font-size: 2.1rem;
+  }
+
+  @media screen and (max-width: 700px) {
+
+    .first {
+      flex-direction: column;
+
+      .who {
+        width: 100%;
+        margin: 0 auto;
+
+        h1 {
+          text-align: center;
+        }
+
+        .mobile-img {
+          display: block;
+          margin: 10px auto;
+          width: 100%;
+          height: 200px;
+          border: 1px solid red;
+        }
+      }
+
+      .images {
+        display: none;
+      }
+    }
+
+    .join-us {
+      &>.row:first-child {
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+          line-height: 1;
+          margin: 15px 0;
+          justify-content: center;
+          width: 100%
+        }
+
+        p {
+          width: 100%
+        }
+      }
+
+      h3 {
+        margin: 25px 0;
+      }
+
+      &>.row:nth-child(2) {
+        flex-direction: column;
+
+        &::after {
+          display: none;
+        }
+
+        &>div:first-child {
+          width: 100%;
+
+          form {
+            .row {
+              flex-direction: column;
+
+              input {
+                width: 100%;
+              }
+            }
+
+            input {
+              width: 100%;
+            }
+
+            button {
+              width: 100%;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+
+}
