@@ -37,14 +37,37 @@ section {
       position: relative;
     }
 
+    h2 {
+      font-size: 1.875rem;
+      font-weight: normal;
+      font-family: $poppins;
+      font-style: italic;
+
+      @media (max-width:1000px) {
+        text-align: center;
+      }
+
+      @media (max-width:700px) {
+        display: none;
+      }
+    }
+
     h1 {
       color: white;
+
+      @media (max-width:700px) {
+        margin: 25px 0;
+      }
     }
 
     a {
       @include btn(white, $phil-blue);
       color: $phil-blue;
       padding: 5px 10px;
+
+      @media (max-width:700px) {
+        padding: 10px;
+      }
     }
   }
 
@@ -58,7 +81,11 @@ section {
 
     h2 {
       margin: 15px 0;
-      font-size: 40px;
+      font-size: 2.5rem;
+
+      @media (max-width:700px) {
+        text-align: center;
+      }
     }
 
     h2:first-child {
@@ -78,14 +105,23 @@ section {
         flex-direction: column;
 
         p:first-child {
-          font-size: 30px;
+          font-size: 1.875rem;
           color: #717171;
         }
 
         p:last-child {
-          font-size: 40px;
+          font-size: 2.5rem;
           font-weight: bold;
         }
+
+        @media (max-width:700px) {
+          margin: 15px 0;
+        }
+      }
+
+      @media (max-width:700px) {
+        flex-direction: column;
+        align-items: center;
       }
     }
   }
@@ -94,7 +130,11 @@ section {
 
     h2 {
       font-family: $poppins;
-      font-size: 40px;
+      font-size: 2.5rem;
+
+      @media (max-width:700px) {
+        text-align: center;
+      }
     }
 
     h2:first-child {
@@ -132,7 +172,7 @@ section {
       align-items: center;
 
       h3 {
-        font-size: 70px;
+        font-size: 4.375rem;
         font-weight: normal;
         font-family: $poppins;
       }
@@ -159,11 +199,11 @@ section {
 
         h4 {
           color: $phil-blue;
-          font-size: 28px;
+          font-size: 1.75rem;
         }
 
         &>p {
-          font-size: 20px;
+          font-size: 1.25rem;
         }
 
         span {
@@ -173,7 +213,7 @@ section {
           justify-content: center;
 
           p {
-            font-size: 20px;
+            font-size: 1.25rem;
             width: 50%;
             color: #656565;
           }
@@ -190,6 +230,9 @@ section {
 
     }
 
+    @media (max-width:700px) {
+      width: 100%;
+    }
 
   }
 
