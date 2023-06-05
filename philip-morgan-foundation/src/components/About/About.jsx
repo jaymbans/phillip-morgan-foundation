@@ -1,10 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import NavBar from '../NavBar';
 import './_About.scss';
 import largeLogo from '../../media/about-background.png'
 import Footer from '../Footer';
 
 function About() {
+  const [formData, setFormData] = useState({
+    fName: '',
+    lName: '',
+    email: ''
+  })
+
+  const updateForm = (e) => {
+    const content = e.target.value;
+
+    setFormData({
+      ...formData,
+      [e.target.id]: content,
+    })
+
+    return;
+  }
+
+  const submitForm = (e) => {
+    e.preventDefault();
+    alert(formData.email);
+    return
+  }
+
   return (
     <>
       <NavBar />
@@ -48,22 +71,22 @@ function About() {
               <h3>keep in touch</h3>
               <form>
                 <div className="row">
-                  <input type="text" placeholder='First Name' />
-                  <input type="text" placeholder='Last Name' />
+                  <input onChange={updateForm} id='fName' type="text" placeholder='First Name' />
+                  <input onChange={updateForm} id='lName' type="text" placeholder='Last Name' />
                 </div>
-                <input type="text" placeholder='Email Name' />
-                <button>sign up for updates</button>
+                <input onChange={updateForm} id='email' type="text" placeholder='Email Name' />
+                <button type='submit' onClick={submitForm}>sign up for updates</button>
               </form>
             </div>
             <div className="media-links">
               <div className="links">
-                <a>
+                <a target='_blank' href='https://www.facebook.com/PhilipMorganFoundation/'>
                   <img src={require('../../media/purple-fb.png')} />
                 </a>
-                <a>
+                <a target='_blank' href='https://www.instagram.com/philipmorganfoundation/'>
                   <img src={require('../../media/purple-ig.png')} />
                 </a>
-                <a>
+                <a target='_blank' href='mailto:pmfoundationorg@gmail.com'>
                   <img src={require('../../media/purple-mail.png')} />
                 </a>
               </div>

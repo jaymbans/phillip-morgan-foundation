@@ -12,9 +12,9 @@ function Footer() {
         <Link to='/contact'>Contact</Link>
       </div>
       <div className="row">
-        <a target='_blank'><img src={require('../media/footer-fb.png')} /></a>
-        <a target='_blank'><img src={require('../media/footer-ig.png')} /></a>
-        <a target='_blank'><img src={require('../media/footer-mail.png')} /></a>
+        <a target='_blank' href='https://www.facebook.com/PhilipMorganFoundation/'><img src={require('../media/footer-fb.png')} /></a>
+        <a target='_blank' href='https://www.instagram.com/philipmorganfoundation/'><img src={require('../media/footer-ig.png')} /></a>
+        <a target='_blank' href='mailto:pmfoundationorg@gmail.com'><img src={require('../media/footer-mail.png')} /></a>
         <p>
           +1(201)815 1537
         </p>
