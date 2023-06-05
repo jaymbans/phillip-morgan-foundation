@@ -56,7 +56,7 @@ function Events() {
           <h2>Upcoming...</h2>
           {
             eventsList.map((event, idx) => {
-              return <Event key={`event-${idx}`} info={event} />
+              return <Event key={`eventd-${idx}`} info={event} />
             })
           }
           <Link to='#'>Learn More</Link>
