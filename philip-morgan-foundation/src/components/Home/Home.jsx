@@ -5,6 +5,7 @@ import Card from './Card';
 import EventTile from './EventTile'
 import "./_Home.scss";
 import calendarIcon from '../../media/calendar-icon.png'
+import Footer from '../Footer';
 
 function Home() {
   const [cardInfo, setCardInfo] = useState([
@@ -93,6 +94,7 @@ function Home() {
           <Link to='/events' className="blue btn">see more</Link>
         </div>
       </section>
+      <Footer />
     </div>
   )
 }

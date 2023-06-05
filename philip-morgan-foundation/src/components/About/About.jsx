@@ -2,6 +2,7 @@ import React from 'react';
 import NavBar from '../NavBar';
 import './_About.scss';
 import largeLogo from '../../media/about-background.png'
+import Footer from '../Footer';
 
 function About() {
   return (
@@ -71,6 +72,7 @@ function About() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   )
 }

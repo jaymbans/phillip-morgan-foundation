@@ -4,6 +4,7 @@ import './_Events.scss'
 import { Link } from 'react-router-dom';
 import whiteLogo from '../../media/white-logo.png';
 import Event from './Event';
+import Footer from '../Footer';
 
 function Events() {
   const [eventsList, setEventsList] = useState([
@@ -62,6 +63,7 @@ function Events() {
           <Link to='#'>Learn More</Link>
         </div>
       </section>
+      <Footer />
     </>
   )
 }

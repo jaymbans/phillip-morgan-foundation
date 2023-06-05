@@ -5,6 +5,7 @@ import ContactUs from './ContactUs';
 
 import { useState, useEffect } from 'react';
 import HowItWorks from './HowItWorks';
+import Footer from '../Footer';
 
 function Contact() {
   const [formType, setFormType] = useState('referral');
@@ -69,6 +70,7 @@ function Contact() {
             </div>
           </div>
         </div>
+        <Footer />
       </section>
     </>
   )

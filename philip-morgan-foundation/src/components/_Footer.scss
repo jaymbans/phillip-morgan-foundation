@@ -1,0 +1,50 @@
+@import '../helpers/placeholders';
+@import '../helpers/variables';
+
+footer {
+  background: $phil-blue;
+  padding: 25px 0;
+
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .row:nth-child(1) {
+    a {
+      color: white;
+      text-decoration: none;
+      font-family: $poppins;
+      font-size: 1.56rem;
+      padding: 5px 15px;
+      text-transform: uppercase;
+    }
+  }
+
+  .row:nth-child(2) {
+    a {
+      margin: 0 10px;
+
+      img {
+        height: 100%;
+        width: auto;
+        display: block;
+      }
+    }
+
+    p {
+      color: white;
+      font-size: 1.56rem;
+      font-family: $poppins;
+    }
+  }
+
+  .row:nth-child(3) {
+    p {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 1.56rem;
+      font-family: $poppins;
+    }
+  }
+}
