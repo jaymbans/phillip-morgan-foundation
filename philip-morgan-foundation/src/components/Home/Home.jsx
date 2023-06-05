@@ -71,8 +71,8 @@ function Home() {
           <h1>What we do</h1>
           <main>
             {
-              cardInfo.map(info => {
-                return <Card info={info} />
+              cardInfo.map((info, idx) => {
+                return <Card key={`card-${idx}`} info={info} />
               })
             }
           </main>
@@ -85,8 +85,8 @@ function Home() {
           </div>
           <div className="events">
             {
-              upcomingEvents.map(event => {
-                return <EventTile info={event} />
+              upcomingEvents.map((event, idx) => {
+                return <EventTile key={`event-${idx}`} info={event} />
               })
             }
           </div>

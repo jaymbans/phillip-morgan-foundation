@@ -1,7 +1,7 @@
 import React from 'react'
 
 function EventTile({ info }) {
-  console.log(info)
+
   return (
     <div className="tile">
       <div>
