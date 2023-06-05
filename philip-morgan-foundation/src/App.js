@@ -5,7 +5,7 @@ import NotFound from "./components/NotFound";
 import About from "./components/About/About";
 import Events from "./components/Events/Events";
 import Contact from "./components/Contact/Contact";
-import Donate from "./components/Donate"
+import Donate from "./components/Donate/Donate";
 
 
 function App() {
