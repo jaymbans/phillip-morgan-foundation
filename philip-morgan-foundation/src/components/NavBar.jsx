@@ -1,6 +1,6 @@
 import React from 'react'
 import './_Navbar.scss'
-import blueLogo from '../media/blue_small_logo.png';
+import blueLogo from '../media/pmf-white-bg-logo-high-res.png';
 import { Link } from 'react-router-dom';
 
 function Navbar() {

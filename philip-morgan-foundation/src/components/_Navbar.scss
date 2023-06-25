@@ -18,6 +18,14 @@ nav {
     align-items: center;
     width: 25%;
 
+    img {
+      height: 70px;
+
+      @media screen and (max-width: 500px) {
+        height: 50px;
+      }
+    }
+
     h4 {
       text-transform: uppercase;
       font-family: $actor;
