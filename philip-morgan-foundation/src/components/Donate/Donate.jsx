@@ -1,7 +1,7 @@
 import NavBar from '../NavBar';
 import './_Donate.scss';
 
-import { useState, Fragment, React } from 'react';
+import { useState, useEffect } from 'react';
 import Footer from '../Footer';
 
 function Donate() {
@@ -28,7 +28,7 @@ function Donate() {
 
 
   return (
-    <Fragment>
+    <>
       <NavBar />
       <section>
         <div className="donations-hero">
@@ -90,7 +90,7 @@ function Donate() {
         </div>
       </section >
       <Footer />
-    </Fragment>
+    </>
   )
 }
 

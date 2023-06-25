@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import React from 'react';
 import { Link } from 'react-router-dom';
 import NavBar from '../NavBar';
 import Card from './Card';

@@ -1,12 +1,11 @@
 import './main.scss'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from "./components/Home/Home";
 import NotFound from "./components/NotFound";
 import About from "./components/About/About";
 import Events from "./components/Events/Events";
 import Contact from "./components/Contact/Contact";
 import Donate from "./components/Donate/Donate";
-import { React } from 'react';
 
 
 function App() {
