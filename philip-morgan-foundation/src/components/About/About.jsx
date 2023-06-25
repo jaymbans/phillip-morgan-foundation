@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, Fragment } from 'react';
 import NavBar from '../NavBar';
 import './_About.scss';
 import largeLogo from '../../media/about-background.png'
@@ -29,7 +29,7 @@ function About() {
   }
 
   return (
-    <>
+    <Fragment>
       <NavBar />
       <section>
         <div className='first'>
@@ -96,7 +96,7 @@ function About() {
         </div>
       </section>
       <Footer />
-    </>
+    </Fragment>
   )
 }
 

@@ -3,7 +3,7 @@ import './_Contact.scss';
 import Referral from './Referral';
 import ContactUs from './ContactUs';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Fragment, React } from 'react';
 import HowItWorks from './HowItWorks';
 import Footer from '../Footer';
 
@@ -36,7 +36,7 @@ function Contact() {
 
 
   return (
-    <>
+    <Fragment>
       <NavBar />
       <section>
         <div className="contact-hero">
@@ -45,10 +45,8 @@ function Contact() {
             <div>
               {
                 formType === 'referral'
-                  ?
-                  <HowItWorks />
-                  :
-                  <></>
+                &&
+                <HowItWorks />
               }
             </div>
             <div>
@@ -72,7 +70,7 @@ function Contact() {
         </div>
         <Footer />
       </section>
-    </>
+    </Fragment>
   )
 }
 

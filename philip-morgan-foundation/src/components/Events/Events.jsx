@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, Fragment } from 'react';
 import NavBar from '../NavBar';
 import './_Events.scss'
 import { Link } from 'react-router-dom';
@@ -21,7 +21,7 @@ function Events() {
 
 
   return (
-    <>
+    <Fragment>
       <NavBar />
       <section>
         <div className="events-hero">
@@ -64,7 +64,7 @@ function Events() {
         </div>
       </section>
       <Footer />
-    </>
+    </Fragment>
   )
 }
 

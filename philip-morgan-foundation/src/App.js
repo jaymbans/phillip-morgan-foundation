@@ -6,6 +6,7 @@ import About from "./components/About/About";
 import Events from "./components/Events/Events";
 import Contact from "./components/Contact/Contact";
 import Donate from "./components/Donate/Donate";
+import { React } from 'react';
 
 
 function App() {
