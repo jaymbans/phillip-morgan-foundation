@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/phillip-morgan-foundation/static/css/main.1d3053ee.css",
-    "main.js": "/phillip-morgan-foundation/static/js/main.a8ea3991.js",
-    "static/media/grandson-granpda.png": "/phillip-morgan-foundation/static/media/grandson-granpda.f54da36a187bba3baace.png",
-    "static/media/about-background.png": "/phillip-morgan-foundation/static/media/about-background.d90b362a09f92c8e3f14.png",
-    "static/media/pmf-white-bg-logo-high-res.png": "/phillip-morgan-foundation/static/media/pmf-white-bg-logo-high-res.d8cf5937548cdb18f67a.png",
-    "index.html": "/phillip-morgan-foundation/index.html",
-    "main.1d3053ee.css.map": "/phillip-morgan-foundation/static/css/main.1d3053ee.css.map",
-    "main.a8ea3991.js.map": "/phillip-morgan-foundation/static/js/main.a8ea3991.js.map"
+    "main.css": "/static/css/main.50c8c9e1.css",
+    "main.js": "/static/js/main.9e733bb4.js",
+    "static/media/grandson-granpda.png": "/static/media/grandson-granpda.f54da36a187bba3baace.png",
+    "static/media/about-background.png": "/static/media/about-background.d90b362a09f92c8e3f14.png",
+    "static/media/pmf-white-bg-logo-high-res.png": "/static/media/pmf-white-bg-logo-high-res.d8cf5937548cdb18f67a.png",
+    "index.html": "/index.html",
+    "main.50c8c9e1.css.map": "/static/css/main.50c8c9e1.css.map",
+    "main.9e733bb4.js.map": "/static/js/main.9e733bb4.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d3053ee.css",
-    "static/js/main.a8ea3991.js"
+    "static/css/main.50c8c9e1.css",
+    "static/js/main.9e733bb4.js"
   ]
 }
