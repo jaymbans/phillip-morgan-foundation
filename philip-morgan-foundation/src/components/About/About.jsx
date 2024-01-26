@@ -23,8 +23,12 @@ function About() {
   }
 
   const submitForm = (e) => {
-    e.preventDefault();
-    alert(formData.email);
+    const mailtoLink = `mailto:pmfoundationorg@gmail.com?subject=PMF Distribution List Request&body=
+    The following contact would like to join the PMF mailing list: First%20Name:%20${encodeURIComponent(formData.fName)}
+    %0ALast%20Name:%20${encodeURIComponent(formData.lName)}
+    %0AEmail:%20${encodeURIComponent(formData.email)}`;
+
+    window.location.href = mailtoLink;
     return
   }
 
@@ -38,10 +42,58 @@ function About() {
             <h1>Who is Philip Morgan?</h1>
             <div className="mobile-img"></div>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              At the age of 56, Philip Morgan,
+
+              a devoted family man,
+
+              businessman, Navy Veteran,
+
+              funny, no-nonsense, Yankee
+
+              and Giants--loving, wonderful
+
+              person, succumbed to the
+
+              effects of a hard battle with
+
+              cancer.
             </p>
             <p>
-              It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              Philip was diagnosed in
+
+              August, 2020 with esophageal
+
+              cancer. He bravely endured
+
+              chemotherapy, hospitalizations,
+
+              32 blood transfusions, immuno-
+
+              therapy and embraced every
+
+              available procedure/medication
+
+              that could beat this disease. His
+
+              suffering and war with this
+
+              monster were shared by his
+
+              family. He passed away
+
+              peacefully at home on April 14,
+
+              2021, just 8 months after being
+
+              diagnosed. He was adamant
+
+              that no family should ever
+
+              experience such a horrific
+
+              ordeal and if they face this fight,
+
+              they do not do it alone.
             </p>
           </div>
           <div className="images">
@@ -56,14 +108,14 @@ function About() {
         <div className='second'>
           <h1>Phil's Mission</h1>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            The mission of our organization is to provide support and assistance to families experiencing the hardships associated with the terminal or devastating illness of a loved one.
           </p>
         </div>
         <div className="join-us">
           <div className="row">
             <h1>Join Us</h1>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              Join us at our upcoming events, lend a helping hand, and experience the joy of giving back. Whether you're passionate about making a difference or simply want to connect with like-minded individuals, we welcome you with open arms. Your involvement matters, and together, we can create positive change.
             </p>
           </div>
           <div className="row">
@@ -74,7 +126,7 @@ function About() {
                   <input onChange={updateForm} id='fName' type="text" placeholder='First Name' />
                   <input onChange={updateForm} id='lName' type="text" placeholder='Last Name' />
                 </div>
-                <input onChange={updateForm} id='email' type="text" placeholder='Email Name' />
+                <input onChange={updateForm} id='email' type="text" placeholder='Email' />
                 <button type='submit' onClick={submitForm}>sign up for updates</button>
               </form>
             </div>
