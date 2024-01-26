@@ -1,8 +1,10 @@
-@import '../../helpers/placeholders';
-@import '../../helpers/variables';
-@import '../../helpers/mixins';
+@import '../../styles/placeholders';
+@import '../../styles/variables';
+@import '../../styles/mixins';
 
 section {
+  @include page-layout;
+  ;
 
   .contact-hero {
     position: relative;
@@ -145,7 +147,7 @@ section {
                 width: 85%;
                 text-align: left !important;
                 height: auto;
-                color: $phil-blue  !important;
+                color: $phil-blue !important;
               }
             }
           }

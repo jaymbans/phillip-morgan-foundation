@@ -1,11 +1,12 @@
-import './main.scss'
+import './styles/main.scss'
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from "./components/Home/Home";
-import NotFound from "./components/NotFound";
-import About from "./components/About/About";
-import Events from "./components/Events/Events";
-import Contact from "./components/Contact/Contact";
-import Donate from "./components/Donate/Donate";
+import Home from "./pages/Home/Home";
+import NotFound from "./pages/NotFound";
+import About from "./pages/About/About";
+import Events from "./pages/Events/Events";
+import Contact from "./pages/Contact/Contact";
+import Donate from "./pages/Donate/Donate";
+import Navbar from './pages/NavBar';
 
 
 function App() {

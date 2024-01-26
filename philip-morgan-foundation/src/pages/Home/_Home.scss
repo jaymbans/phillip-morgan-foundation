@@ -1,6 +1,6 @@
-@import '../../helpers/placeholders';
-@import '../../helpers/variables';
-@import '../../helpers/mixins';
+@import '../../styles/placeholders';
+@import '../../styles/variables';
+@import '../../styles/mixins';
 
 section {
   .hero {
@@ -77,7 +77,7 @@ section {
 
   .homepage-section {
     margin: 65px auto;
-    max-width: 1200px;
+    @include page-layout;
 
     h1 {
       font-family: $arimo;

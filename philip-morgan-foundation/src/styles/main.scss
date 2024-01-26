@@ -10,6 +10,12 @@
   padding: 0;
 }
 
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 button {
   cursor: pointer;
 }
@@ -18,9 +24,11 @@ h4 {
   font-size: 1.5rem;
 }
 
-section {
-  min-height: 100vh;
-}
+//global variables
+$page-width: 1200px;
+
+
+//media styles
 
 @media only screen and (max-width: 900px) {
   :root {

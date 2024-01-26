@@ -1,13 +1,13 @@
-@import '../../helpers/_mixins';
-@import '../../helpers/_variables';
-@import '../../helpers/_placeholders';
+@import '../../styles/_mixins';
+@import '../../styles/_variables';
+@import '../../styles/_placeholders';
 
 section {
   font-family: $bree;
+  @include page-layout;
 
   &>div {
     padding: 5% 2%;
-    max-width: 1200px;
     margin: 0 auto;
   }
 

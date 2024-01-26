@@ -6,25 +6,9 @@ import EventTile from './EventTile'
 import "./_Home.scss";
 import calendarIcon from '../../media/calendar-icon.png'
 import Footer from '../Footer';
+import { waysWehelp } from "../../data/homepageData"
 
 function Home() {
-  const [cardInfo, setCardInfo] = useState([
-    {
-      title: 'fund raise',
-      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,`,
-      imgUrl: 'fundraise'
-    },
-    {
-      title: 'events',
-      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,`,
-      imgUrl: 'events'
-    },
-    {
-      title: 'donate',
-      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,`,
-      imgUrl: 'donate'
-    }
-  ])
 
   const [upcomingEvents, setUpcomingEvents] = useState([
     {
@@ -69,10 +53,10 @@ function Home() {
           </main>
         </div>
         <div className="homepage-section">
-          <h1>What we do</h1>
+          <h1>Ways we Help</h1>
           <main>
             {
-              cardInfo.map((info, idx) => {
+              waysWehelp.map((info, idx) => {
                 return <Card key={`card-${idx}`} info={info} />
               })
             }
