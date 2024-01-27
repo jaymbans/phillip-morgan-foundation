@@ -12,23 +12,11 @@ function Home() {
 
   const [upcomingEvents, setUpcomingEvents] = useState([
     {
-      date: { month: 'June', day: '01' },
-      title: 'summer corn hole tournament',
+      date: { month: 'April', day: '06' },
+      title: '2nd Annual Philip Morgan Foundation Cornhole Tournament',
       timeframe: '10am-7pm',
-      locationName: 'country club'
+      locationName: 'Valley Brook Country Club'
     },
-    {
-      date: { month: 'June', day: '01' },
-      title: 'summer corn hole tournament',
-      timeframe: '10am-7pm',
-      locationName: 'country club'
-    },
-    {
-      date: { month: 'June', day: '01' },
-      title: 'summer corn hole tournament',
-      timeframe: '10am-7pm',
-      locationName: 'country club'
-    }
   ]);
 
 
@@ -53,7 +41,7 @@ function Home() {
           </main>
         </div>
         <div className="homepage-section">
-          <h1>Ways we Help</h1>
+          <h1>Ways we help</h1>
           <main>
             {
               waysWehelp.map((info, idx) => {
@@ -75,7 +63,7 @@ function Home() {
               })
             }
           </div>
-          <Link to='/events' className="blue btn">see more</Link>
+          <Link to='/events' className="blue btn">learn more</Link>
         </div>
       </section>
       <Footer />

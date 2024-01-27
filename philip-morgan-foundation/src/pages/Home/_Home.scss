@@ -110,7 +110,7 @@ section {
         background: white;
         max-width: 345px;
         margin: 2% 3%;
-        height: 490px;
+        height: 500px;
         border-radius: 51px;
         display: flex;
         align-items: center;
@@ -119,27 +119,12 @@ section {
         box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
         border-top: 9px solid $phil-blue;
 
-        .img-container {
-          background: $phil-blue;
-          height: 140px;
-          width: 140px;
+        svg {
+          font-size: 40px;
+          padding: 2px;
+          color: white;
           border-radius: 50%;
-          position: relative;
-          @extend %center;
-
-          &::after {
-            content: "";
-            position: absolute;
-            background: none;
-            border: 3px solid white;
-            height: 120px;
-            width: 120px;
-            border-radius: inherit;
-          }
-
-          img {
-            width: 70px;
-          }
+          background-color: $phil-blue;
         }
 
         h5,
@@ -240,9 +225,11 @@ section {
         display: flex;
         @extend %center;
         padding: 5px 10px;
-        width: 100px;
+        width: 120px;
+        white-space: nowrap;
         margin: 15px auto;
         text-transform: uppercase;
+        text-align: center;
       }
     }
   }

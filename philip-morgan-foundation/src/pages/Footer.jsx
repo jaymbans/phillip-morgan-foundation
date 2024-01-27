@@ -16,7 +16,7 @@ function Footer() {
         <a target='_blank' href='https://www.instagram.com/philipmorganfoundation/'><img src={require('../media/footer-ig.png')} /></a>
         <a target='_blank' href='mailto:pmfoundationorg@gmail.com'><img src={require('../media/footer-mail.png')} /></a>
         <p>
-          +1(201)815 1537
+          +1 (201) 815 1537
         </p>
       </div>
       <div className="row">

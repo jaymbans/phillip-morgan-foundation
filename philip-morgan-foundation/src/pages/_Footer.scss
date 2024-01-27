@@ -23,6 +23,8 @@ footer {
   }
 
   .row:nth-child(2) {
+    margin: 0 10px;
+
     a {
       margin: 0 10px;
 
@@ -37,18 +39,18 @@ footer {
       color: white;
       font-size: 1.56rem;
       font-family: $poppins;
+      margin: 10px 0;
     }
   }
 
   .row:nth-child(3) {
     p {
       color: rgba(255, 255, 255, 0.6);
-      font-size: 1.56rem;
+      font-size: 14px;
       font-family: $poppins;
       text-align: center;
 
       @media(max-width: 500px) {
-        font-size: 1.3rem;
         margin: 1rem auto;
       }
     }

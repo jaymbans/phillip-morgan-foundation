@@ -37,10 +37,11 @@ function About() {
       <NavBar />
       <section>
         <div className='first'>
-          <img src={largeLogo} />
           <div className="who">
             <h1>Who is Philip Morgan?</h1>
-            <div className="mobile-img"></div>
+            <img src={require("../../media/phil-with-fish.png")}
+              className='mobile-img'
+            />
             <p>
               At the age of 56, Philip Morgan,
 
@@ -97,12 +98,7 @@ function About() {
             </p>
           </div>
           <div className="images">
-            <div className="img"></div>
-            <div className="row">
-              <div className="img"></div>
-              <div className="img"></div>
-            </div>
-            <div className="img"></div>
+            <img src={require("../../media/phil-with-fish.png")} />
           </div>
         </div>
         <div className='second'>
@@ -115,7 +111,7 @@ function About() {
           <div className="row">
             <h1>Join Us</h1>
             <p>
-              Join us at our upcoming events, lend a helping hand, and experience the joy of giving back. Whether you're passionate about making a difference or simply want to connect with like-minded individuals, we welcome you with open arms. Your involvement matters, and together, we can create positive change.
+              at our upcoming events, lend a helping hand, and experience the joy of giving back. Whether you're passionate about making a difference or simply want to connect with like-minded individuals, we welcome you with open arms. Your involvement matters, and together, we can create positive change.
             </p>
           </div>
           <div className="row">

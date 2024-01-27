@@ -5,6 +5,9 @@
 section {
   font-family: $bree;
   @include page-layout;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   &>div {
     padding: 5% 2%;
@@ -18,19 +21,8 @@ section {
     justify-content: space-between;
     position: relative;
 
-    &>img {
-      position: absolute;
-      bottom: 0;
-      left: 12.5%;
-
-      @media screen and (max-width: 1000px) {
-        display: none;
-      }
-
-    }
-
     .who {
-      width: 47%;
+      width: 50%;
       max-width: 700px;
 
       p {
@@ -38,24 +30,24 @@ section {
         font-size: 1.75rem;
         margin: 25px 0;
       }
+
+
+      .mobile-img {
+        display: none;
+      }
     }
 
     .images {
+      width: 50%;
       display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: center;
-      padding-top: 100px;
 
-      .row {
-        flex-wrap: wrap;
-        justify-content: center;
-      }
 
-      .img {
+      img {
         margin: 10px;
-        min-width: 250px;
-        height: 200px;
-        border: 1px solid red;
+        width: 70%;
       }
     }
 
@@ -74,20 +66,23 @@ section {
   .join-us {
     background: #958FA7;
     color: white;
+    width: 100%;
 
     &>.row:first-child {
+      width: 100%;
+
       h1 {
         color: white;
-        width: 40%;
         display: flex;
         line-height: .5;
-
+        display: inline-block;
+        margin-right: 30px;
       }
 
       p {
-        width: 60%;
         max-width: 750px;
         font-size: 1.5rem;
+        display: block;
       }
     }
 
@@ -220,8 +215,9 @@ section {
           display: block;
           margin: 10px auto;
           width: 100%;
-          height: 200px;
-          border: 1px solid red;
+          height: 400px;
+          object-fit: cover;
+          object-position: 0 15%;
         }
       }
 
