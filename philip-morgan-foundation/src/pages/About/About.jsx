@@ -35,7 +35,7 @@ function About() {
   return (
     <>
       <NavBar />
-      <section>
+      <section id="about">
         <div className='first'>
           <div className="who">
             <h1>Who is Philip Morgan?</h1>

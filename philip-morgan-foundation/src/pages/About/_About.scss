@@ -2,7 +2,7 @@
 @import '../../styles/_variables';
 @import '../../styles/_placeholders';
 
-section {
+section#about {
   font-family: $bree;
   @include page-layout;
   display: flex;

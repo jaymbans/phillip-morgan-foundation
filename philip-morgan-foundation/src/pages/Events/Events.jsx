@@ -23,7 +23,7 @@ function Events() {
   return (
     <>
       <NavBar />
-      <section>
+      <section id="events">
         <div className="events-hero">
           <div className="overlay"></div>
           <img src={whiteLogo} />
