@@ -94,10 +94,10 @@ section {
       &::after {
         content: "";
         position: absolute;
-        width: 140px;
+        width: 200px;
         height: 3px;
         background: $phil-blue;
-        bottom: -5px;
+        bottom: -10px;
       }
     }
 
@@ -109,7 +109,7 @@ section {
       .card {
         background: white;
         max-width: 345px;
-        margin: 10px 1%;
+        margin: 2% 3%;
         height: 490px;
         border-radius: 51px;
         display: flex;
@@ -148,9 +148,11 @@ section {
         }
 
         h5 {
-          font-size: 28px;
+          font-size: 25px;
+          margin: 5px 0;
           color: $phil-blue;
           text-transform: capitalize;
+          text-align: center;
         }
 
         p {
