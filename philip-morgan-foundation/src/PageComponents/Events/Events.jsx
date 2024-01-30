@@ -22,18 +22,14 @@ function Events() {
 
   return (
     <>
-      <NavBar />
       <section id="events">
         <div className="events-hero">
           <div className="overlay"></div>
           <img src={whiteLogo} />
           <h2>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Empower Change, Ignite Hope: Join Us in Making a Difference!
           </h2>
           <h1>Events</h1>
-          <Link to='/contact'>
-            stay notified
-          </Link>
         </div>
         <div className="previously">
           <h2>previously...</h2>
@@ -63,7 +59,6 @@ function Events() {
           <Link to='#'>Learn More</Link>
         </div>
       </section>
-      <Footer />
     </>
   )
 }

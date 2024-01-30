@@ -37,7 +37,6 @@ function Contact() {
 
   return (
     <>
-      <NavBar />
       <section>
         <div className="contact-hero">
           <div className="overlay"></div>
@@ -70,7 +69,6 @@ function Contact() {
             </div>
           </div>
         </div>
-        <Footer />
       </section>
     </>
   )

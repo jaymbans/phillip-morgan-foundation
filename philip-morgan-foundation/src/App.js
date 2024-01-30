@@ -1,12 +1,12 @@
 import './styles/main.scss'
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from "./pages/Home/Home";
-import NotFound from "./pages/NotFound";
-import About from "./pages/About/About";
-import Events from "./pages/Events/Events";
-import Contact from "./pages/Contact/Contact";
-import Donate from "./pages/Donate/Donate";
-import Navbar from './pages/NavBar';
+import Home from "./PageComponents/Home/Home";
+import NotFound from "./PageComponents/NotFound";
+import About from "./PageComponents/About/About";
+import Events from "./PageComponents/Events/Events";
+import Contact from "./PageComponents/Contact/Contact";
+import Donate from "./PageComponents/Donate/Donate";
+import PageLayout from './components/Layout/PageLayout';
 
 
 function App() {
@@ -15,11 +15,11 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="events" element={<Events />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="donate" element={<Donate />} />
+          <Route path="/" element={<PageLayout children={<Home />} />} />
+          <Route path="about" element={<PageLayout children={<About />} />} />
+          <Route path="events" element={<PageLayout children={<Events />} />} />
+          <Route path="contact" element={<PageLayout children={<Contact />} />} />
+          <Route path="donate" element={<PageLayout children={<Donate />} />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>

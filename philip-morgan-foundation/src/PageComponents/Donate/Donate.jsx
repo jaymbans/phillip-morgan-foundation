@@ -7,7 +7,6 @@ function Donate() {
 
   return (
     <>
-      <NavBar />
       <section id="donate">
         <h1>
           Thank you for your support
@@ -24,7 +23,6 @@ function Donate() {
           <iframe title='Donation form powered by Zeffy' src='https://www.zeffy.com/en-US/embed/donation-form/324a1727-cb81-4b10-ba06-4e0d68fdf08c' allowpaymentrequest allowTransparency="true"></iframe>
         </div>
       </section >
-      <Footer />
     </>
   )
 }

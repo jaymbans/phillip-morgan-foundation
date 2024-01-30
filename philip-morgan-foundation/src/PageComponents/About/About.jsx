@@ -34,7 +34,6 @@ function About() {
 
   return (
     <>
-      <NavBar />
       <section id="about">
         <div className='first'>
           <div className="who">
@@ -143,7 +142,6 @@ function About() {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   )
 }

@@ -22,7 +22,6 @@ function Home() {
 
   return (
     <div>
-      <NavBar />
       <section id="home">
         <div className="hero">
           <div className="overlay"></div>
@@ -66,7 +65,6 @@ function Home() {
           <Link to='/events' className="blue btn">learn more</Link>
         </div>
       </section>
-      <Footer />
     </div>
   )
 }
