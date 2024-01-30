@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build && prepare-deployment",
+    "predeploy": "npm run build && echo 'philipmorganfoundation.org' > build/CNAME",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
