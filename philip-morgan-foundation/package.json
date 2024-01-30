@@ -20,11 +20,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && prepare-deployment",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare-deployment": "echo 'philipmorganfoundation.org' > CNAME && git add CNAME && git commit -m 'Update CNAME' && git push origin main"
   },
   "eslintConfig": {
     "extends": [
