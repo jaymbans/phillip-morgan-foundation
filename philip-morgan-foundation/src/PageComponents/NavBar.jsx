@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './_Navbar.scss'
 import blueLogo from '../media/pmf-white-bg-logo-high-res.png';
 import { Link } from 'react-router-dom';
 
-function Navbar() {
+function Navbar({ }) {
+
   const activateHamburgerMenu = (e) => {
+
     // select menu
     const menu = document.getElementById('hamburger')
+
 
     const navLinks = document.querySelector('.nav-mid')
 
