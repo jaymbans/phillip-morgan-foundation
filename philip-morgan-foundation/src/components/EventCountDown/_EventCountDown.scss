@@ -19,9 +19,14 @@
 
     .time-container {
       font-family: $knewave;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
       @media (max-width: 767px) {
         width: 20%;
+        margin: 0 2%;
       }
 
       .time {
@@ -35,6 +40,10 @@
         height: 60px;
         width: 77px;
         margin: 0 10px;
+
+        @media (max-width: 767px) {
+          width: 100%;
+        }
       }
 
       .metric {
