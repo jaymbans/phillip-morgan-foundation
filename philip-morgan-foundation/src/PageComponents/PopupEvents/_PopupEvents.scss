@@ -8,7 +8,20 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 1200px;
+  height: 1100px;
+
+
+  @media (max-width: 767px) {
+    height: auto;
+
+    nav {
+      background: white;
+
+      .nav-mid {
+        background: white;
+      }
+    }
+  }
 
   main {
     height: 100%;
@@ -18,10 +31,24 @@
     display: flex;
     padding: 40px 5%;
 
+    @media (max-width: 767px) {
+      padding: 40px;
+    }
+
+
     .content {
       width: 100%;
       flex: 1;
       display: flex;
+
+      @media (max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+
+        * {
+          text-align: center;
+        }
+      }
 
       &>div {
         width: 50%;
@@ -35,39 +62,60 @@
         h1 {
           font-family: $knewave;
           text-align: center;
-          font-size: 70px;
+          font-size: 5.5rem;
           color: $phil-blue;
+
+          @media (max-width: 767px) {
+            font-size: 40px;
+          }
         }
 
         h3 {
-          font-size: 40px;
+          font-size: 3rem;
           color: white;
           text-align: center;
           font-family: $knewave;
+
+          @media (max-width: 767px) {
+            font-size: 30px;
+          }
         }
 
         a {
           background: $phil-blue;
           color: white;
           padding: 5px 35px;
-          font-size: 25px;
+          font-size: 2rem;
           font-family: $poppins;
           margin: 20px auto;
           text-decoration: none;
           border-radius: 30px;
           display: inline-block;
+
+          @media (max-width: 767px) {
+            font-size: 14px;
+          }
         }
 
         p {
           font-family: $poppins;
-          font-size: 20px;
+          font-size: 1.4rem;
           color: $phil-blue;
           font-weight: bold;
           margin: 5px 0;
+
+          @media (max-width: 767px) {
+            font-size: 12px;
+          }
         }
 
         small {
-          font-size: 16px;
+          font-size: 1.2rem;
+
+          @media (max-width: 767px) {
+            font-size: 10px;
+          }
+
           font-weight: bold;
           font-family: $poppins;
           color: $phil-blue;
@@ -85,17 +133,30 @@
         align-items: end;
         padding-top: 25px;
 
+        @media (max-width: 767px) {
+          align-items: center;
+        }
+
         a {
           background: none;
           display: flex;
           align-items: center;
           color: $phil-blue;
-          font-size: 20px;
+          font-size: 1.8rem;
           margin-bottom: 30px;
+          font-family: $poppins;
           text-decoration: none;
 
+          @media (max-width: 767px) {
+            font-size: 14px;
+          }
+
           svg {
-            font-size: 25px;
+            font-size: 1.8rem;
+
+            @media (max-width: 767px) {
+              font-size: 14px;
+            }
           }
         }
 
@@ -103,6 +164,12 @@
           justify-content: center;
           display: flex;
           width: 100%;
+
+          @media (max-width: 767px) {
+            img {
+              width: 80%;
+            }
+          }
         }
       }
     }
@@ -112,9 +179,14 @@
       align-items: center;
       justify-content: center;
       height: 15%;
-      font-size: 40px;
+      font-size: 3rem;
       font-family: $knewave;
       color: $phil-blue;
+
+      @media (max-width: 767px) {
+        font-size: 20px;
+        text-align: center;
+      }
     }
   }
 }

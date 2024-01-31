@@ -20,9 +20,11 @@ function Navbar({ }) {
     if (Array.from(barArray[0].classList).includes('active')) {
       barArray.forEach(bar => bar.classList.remove('active'));
       navLinks.classList.remove('active')
+      document.body.style.overflow = "auto"
     } else {
       barArray.forEach(bar => bar.classList.add('active'))
       navLinks.classList.add('active')
+      document.body.style.overflow = "hidden"
     }
 
     return
