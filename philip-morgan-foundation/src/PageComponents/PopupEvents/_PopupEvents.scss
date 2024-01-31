@@ -1,0 +1,120 @@
+@import "../../styles/variables";
+
+#popup-event-container {
+  background: url("../../media/cartoon-sky.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1200px;
+
+  main {
+    height: 100%;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    padding: 40px 5%;
+
+    .content {
+      width: 100%;
+      flex: 1;
+      display: flex;
+
+      &>div {
+        width: 50%;
+      }
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+          font-family: $knewave;
+          text-align: center;
+          font-size: 70px;
+          color: $phil-blue;
+        }
+
+        h3 {
+          font-size: 40px;
+          color: white;
+          text-align: center;
+          font-family: $knewave;
+        }
+
+        a {
+          background: $phil-blue;
+          color: white;
+          padding: 5px 35px;
+          font-size: 25px;
+          font-family: $poppins;
+          margin: 20px auto;
+          text-decoration: none;
+          border-radius: 30px;
+          display: inline-block;
+        }
+
+        p {
+          font-family: $poppins;
+          font-size: 20px;
+          color: $phil-blue;
+          font-weight: bold;
+          margin: 5px 0;
+        }
+
+        small {
+          font-size: 16px;
+          font-weight: bold;
+          font-family: $poppins;
+          color: $phil-blue;
+          text-align: center;
+        }
+
+        img {
+          margin: 10px 0;
+        }
+      }
+
+      .right {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        padding-top: 25px;
+
+        a {
+          background: none;
+          display: flex;
+          align-items: center;
+          color: $phil-blue;
+          font-size: 20px;
+          margin-bottom: 30px;
+          text-decoration: none;
+
+          svg {
+            font-size: 25px;
+          }
+        }
+
+        #cornhole-icon {
+          justify-content: center;
+          display: flex;
+          width: 100%;
+        }
+      }
+    }
+
+    .phone-number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 15%;
+      font-size: 40px;
+      font-family: $knewave;
+      color: $phil-blue;
+    }
+  }
+}

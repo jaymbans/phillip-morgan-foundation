@@ -6,6 +6,8 @@
   display: flex;
   align-items: center;
   padding: 10px 5%;
+  position: relative;
+  z-index: 2;
 
   &>div,
   &>h1 {

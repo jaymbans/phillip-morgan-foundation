@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-import NavBar from '../NavBar';
-import './_Events.scss'
 import { Link } from 'react-router-dom';
 import whiteLogo from '../../media/white-logo.png';
 import Event from './Event';
-import Footer from '../Footer';
+import './_Events.scss';
 
 function Events() {
   const [eventsList, setEventsList] = useState([
@@ -18,6 +16,7 @@ function Events() {
       thumbnailUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDeNWL_ApRTo33UXrt0vSnYfZhxFD0-brJCa0SO8KDdSGDAJkCUJ0QaTG4PUxyzJToVXo&usqp=CAU'
     }
   ])
+
 
 
   return (
