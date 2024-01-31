@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.e0773c47.css",
-    "main.js": "/static/js/main.254cec41.js",
+    "main.css": "/static/css/main.7e3fb9f7.css",
+    "main.js": "/static/js/main.0a1b04c4.js",
     "static/media/grandson-granpda.png": "/static/media/grandson-granpda.f54da36a187bba3baace.png",
     "static/media/phil-with-fish.png": "/static/media/phil-with-fish.eee5495cb3125f4609ff.png",
+    "static/media/cornhole-tournament-flyer.jpeg": "/static/media/cornhole-tournament-flyer.e1f7a15cb6a4cedca2cc.jpeg",
     "static/media/about-background.png": "/static/media/about-background.d90b362a09f92c8e3f14.png",
+    "static/media/cornhole-img.svg": "/static/media/cornhole-img.9dbafb46cd82923019b5d594b9e240a8.svg",
+    "static/media/cartoon-sky.jpeg": "/static/media/cartoon-sky.62ab34261427b64a20f6.jpeg",
     "static/media/pmf-white-bg-logo-high-res.png": "/static/media/pmf-white-bg-logo-high-res.d8cf5937548cdb18f67a.png",
     "index.html": "/index.html",
-    "main.e0773c47.css.map": "/static/css/main.e0773c47.css.map",
-    "main.254cec41.js.map": "/static/js/main.254cec41.js.map"
+    "main.7e3fb9f7.css.map": "/static/css/main.7e3fb9f7.css.map",
+    "main.0a1b04c4.js.map": "/static/js/main.0a1b04c4.js.map"
   },
   "entrypoints": [
-    "static/css/main.e0773c47.css",
-    "static/js/main.254cec41.js"
+    "static/css/main.7e3fb9f7.css",
+    "static/js/main.0a1b04c4.js"
   ]
 }
