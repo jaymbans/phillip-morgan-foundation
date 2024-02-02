@@ -1,73 +1,55 @@
-import NavBar from '../NavBar';
 import './_Contact.scss';
-import Referral from './Referral';
-import ContactUs from './ContactUs';
-
-import { useState, useEffect } from 'react';
-import HowItWorks from './HowItWorks';
-import Footer from '../Footer';
+import { useState } from 'react';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import MailIcon from '@mui/icons-material/Mail';
 
 function Contact() {
-  const [formType, setFormType] = useState('referral');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
-  useEffect(() => {
-    setFormType('referral');
-    document.getElementById('referral').classList.add('active');
-
-  }, [])
-
-  const changeFormType = (e) => {
+  const handleMailto = (e) => {
     e.preventDefault();
-
-    const referralButton = document.getElementById('referral');
-
-    const contactButton = document.getElementById('contact-us');
-
-    // remove any active button
-    [referralButton, contactButton].forEach(button => button.classList.remove('active'));
-
-    // add the active to the button clicked
-    e.target.classList.add('active');
-
-    // change the state
-    setFormType(String(e.target.id))
-
-  }
+    const mailtoLink = `mailto:pmfoundationorg@gmail.com?subject=Contact%20Form%20from%20PMF.org&body=Email:%20${encodeURIComponent(email)}%0A%0AMessage:%20${encodeURIComponent(message)}`;
+    window.location.href = mailtoLink;
+  };
 
 
   return (
     <>
-      <section>
-        <div className="contact-hero">
-          <div className="overlay"></div>
-          <div className="container">
-            <div>
-              {
-                formType === 'referral'
-                  ?
-                  <HowItWorks />
-                  :
-                  <></>
-              }
+      <section id='contact-page'>
+        <div className="form-container">
+          <h3>CONTACT US</h3>
+          <p>We'd love to hear from you</p>
+          <form onSubmit={handleMailto}>
+            <label htmlFor="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+
+            <label htmlFor="message">Message:</label>
+            <textarea
+              id="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              rows="4"
+              required
+            ></textarea>
+            <input id='contact-btn' type="submit" value="Send" />
+            <div className="contact-info">
+              <LocalPhoneIcon />
+              (201)-294 3265
             </div>
-            <div>
-              <form>
-                <img
-                  src={require('../../media/blue-medium-logo.png')} />
-                <div className="form-title">
-                  <button
-                    onClick={changeFormType}
-                    id='referral'>Referral</button>
-                  <button
-                    onClick={changeFormType}
-                    id='contact-us'>Contact Us</button>
-                </div>
-                <div className="form-content">
-                  {formType === 'referral' ? <Referral /> : <ContactUs />}
-                </div>
-              </form>
+            <div className="contact-info">
+              <MailIcon />
+              pmfoundationorg@gmail.com
             </div>
-          </div>
+          </form>
+        </div>
+        <div className="image-container">
         </div>
       </section>
     </>
