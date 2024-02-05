@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 function EventCountDown() {
   const currentYear = new Date().getFullYear();
-  const targetDate = new Date(currentYear, 3, 6, 23, 59, 59)
+  const targetDate = new Date(currentYear, 2, 31, 0, 0, 0)
 
   const calculateTimeLeft = () => {
     const now = new Date().getTime();
