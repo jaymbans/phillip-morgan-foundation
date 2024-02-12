@@ -6,7 +6,7 @@ const eventsData = [
     locationName: 'Valley Brook Country Club',
     locationAddress: '15 River Vale Road, River Vale, NJ 07675',
     sponsorUrl: '',
-    timeframe: "10am-7pm",
+    timeframe: "1pm-5pm",
     isActive: true
   }
 ]

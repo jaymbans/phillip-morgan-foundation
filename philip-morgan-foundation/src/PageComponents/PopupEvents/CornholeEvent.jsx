@@ -21,7 +21,12 @@ function CornholeEvent() {
                 FOR THE 2ND ANNUAL PHILIP MORGAN FOUNDATION CORNHOLE TOURNAMENT
               </h3>
               <a href={require("../../media/cornhole-tournament-flyer.jpeg")}
-                target='_blank'>Open Flyer</a>
+                target='_blank'>
+                Open Flyer
+              </a>
+              <button>
+                Buy Ticket
+              </button>
               <p>
                 Indoors at Valley Brook Country Club | April 06 at 1pm
               </p>
