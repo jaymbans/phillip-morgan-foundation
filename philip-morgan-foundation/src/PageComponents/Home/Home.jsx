@@ -62,7 +62,7 @@ function Home() {
               })
             }
           </div>
-          <Link to='/events' className="blue btn">learn more</Link>
+          <Link to='/cornhole-event' className="blue btn">learn more</Link>
         </div>
       </section>
     </div>
