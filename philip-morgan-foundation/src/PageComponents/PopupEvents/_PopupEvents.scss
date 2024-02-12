@@ -81,19 +81,25 @@
           }
         }
 
-        a {
-          background: $phil-blue;
-          color: white;
-          padding: 5px 35px;
-          font-size: 2rem;
-          font-family: $poppins;
-          margin: 20px auto;
-          text-decoration: none;
-          border-radius: 30px;
-          display: inline-block;
+        .link-container {
+          display: flex;
+          align-items: center;
 
-          @media (max-width: 767px) {
-            font-size: 14px;
+          a {
+            background: $phil-blue;
+            color: white;
+            padding: 5px 35px;
+            font-size: 2rem;
+            font-family: $poppins;
+            margin: 20px auto;
+            text-decoration: none;
+            border-radius: 30px;
+            display: inline-block;
+            margin: 10px;
+
+            @media (max-width: 767px) {
+              font-size: 14px;
+            }
           }
         }
 
