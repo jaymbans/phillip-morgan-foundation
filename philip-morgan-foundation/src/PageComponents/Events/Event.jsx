@@ -18,7 +18,7 @@ function Event({ info }) {
           <img src={info.thumbnailUrl} />
         }
         <div className="info">
-          <h4>{info.type}</h4>
+          <h4>{info.title}</h4>
           <p>{info.locationName}</p>
           <span>
             <button onClick={copyLocationName}>

@@ -6,18 +6,6 @@ import './_Events.scss';
 import eventsData from '../../data/eventsData';
 
 function Events() {
-  const [eventsList, setEventsList] = useState([
-    {
-      day: '06',
-      month: 'April',
-      type: '2nd Annual Philip Morgan Foundation Cornhole Tournament',
-      locationName: 'Valley Brook Country Club',
-      locationAddress: '15 River Vale Road, River Vale, NJ 07675',
-      sponsorUrl: '',
-      time: "10am-7pm"
-    }
-  ])
-
 
 
   return (
@@ -52,7 +40,7 @@ function Events() {
         <div className="upcoming">
           <h2>Upcoming...</h2>
           {
-            eventsList.map((event, idx) => {
+            eventsData.map((event, idx) => {
               return <Event key={`eventd-${idx}`} info={event} />
             })
           }
