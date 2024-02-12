@@ -1,7 +1,11 @@
 import React from 'react'
-import copyIcon from '../../media/copy-icon.png';
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 
 function Event({ info }) {
+  const copyLocationName = () => {
+    navigator.clipboard.writeText(info.locationAddress)
+  }
+
   return (
     <div className='event'>
       <div className="date">
@@ -9,13 +13,16 @@ function Event({ info }) {
         <h3>{info.month}</h3>
       </div>
       <div className="content">
-        <img src={info.thumbnailUrl} />
+        {
+          info.thumbnailUrl &&
+          <img src={info.thumbnailUrl} />
+        }
         <div className="info">
           <h4>{info.type}</h4>
           <p>{info.locationName}</p>
           <span>
-            <button>
-              <img src={copyIcon} />
+            <button onClick={copyLocationName}>
+              <ContentCopyIcon />
             </button>
             <p>{info.locationAddress}</p>
           </span>

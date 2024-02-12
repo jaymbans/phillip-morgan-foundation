@@ -7,6 +7,7 @@ import "./_Home.scss";
 import calendarIcon from '../../media/calendar-icon.png'
 import Footer from '../Footer';
 import { waysWehelp } from "../../data/homepageData"
+import eventsData from '../../data/eventsData';
 
 function Home() {
 
@@ -57,8 +58,10 @@ function Home() {
           </div>
           <div className="events">
             {
-              upcomingEvents.map((event, idx) => {
-                return <EventTile key={`event-${idx}`} info={event} />
+              eventsData.map((event, idx) => {
+                if (event.isActive) {
+                  return <EventTile key={`event-${idx}`} event={event} />
+                }
               })
             }
           </div>

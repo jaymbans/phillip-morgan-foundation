@@ -83,6 +83,8 @@ section#events {
     h2 {
       margin: 15px 0;
       font-size: 2.5rem;
+      max-width: 60%;
+      text-align: center;
 
       @media (max-width:700px) {
         text-align: center;
@@ -97,6 +99,9 @@ section#events {
     &>div:last-child {
       width: 100%;
       justify-content: center;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 5vh;
 
       &>div {
         margin: 0 auto;
@@ -182,6 +187,8 @@ section#events {
 
     .content {
       width: 404px;
+      display: flex;
+      align-items: center;
 
       img {
         width: 100%;
@@ -192,15 +199,17 @@ section#events {
       }
 
       .info {
-        height: 55%;
+        min-height: 55%;
         display: flex;
         flex-direction: column;
         padding: 10px 0;
         align-items: center;
         font-family: $poppins;
+        padding: 5px;
 
         h4 {
           color: $phil-blue;
+          text-align: center;
           font-size: 1.75rem;
         }
 
@@ -221,10 +230,13 @@ section#events {
           }
 
           button {
+            background: none;
             width: auto;
+            margin-right: 3px;
 
-            img {
-              height: 100%;
+            svg {
+              color: gray;
+              font-size: 2rem;
             }
           }
         }

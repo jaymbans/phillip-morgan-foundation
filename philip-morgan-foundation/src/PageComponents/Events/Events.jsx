@@ -3,17 +3,18 @@ import { Link } from 'react-router-dom';
 import whiteLogo from '../../media/white-logo.png';
 import Event from './Event';
 import './_Events.scss';
+import eventsData from '../../data/eventsData';
 
 function Events() {
   const [eventsList, setEventsList] = useState([
     {
-      day: '03',
-      month: 'Jul',
-      type: 'Blood Drive',
-      locationName: 'Emerson Senior Center',
-      locationAddress: '123 Sesame St Emerson, NJ 10000',
+      day: '06',
+      month: 'April',
+      type: '2nd Annual Philip Morgan Foundation Cornhole Tournament',
+      locationName: 'Valley Brook Country Club',
+      locationAddress: '15 River Vale Road, River Vale, NJ 07675',
       sponsorUrl: '',
-      thumbnailUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDeNWL_ApRTo33UXrt0vSnYfZhxFD0-brJCa0SO8KDdSGDAJkCUJ0QaTG4PUxyzJToVXo&usqp=CAU'
+      time: "10am-7pm"
     }
   ])
 
@@ -31,8 +32,8 @@ function Events() {
           <h1>Events</h1>
         </div>
         <div className="previously">
-          <h2>previously...</h2>
-          <h2>Spring Corn Hole Tourney</h2>
+          <h2>previously on the...</h2>
+          <h2>First Annual Philip Morgan Foundation Cornhole Tournament</h2>
           <div className="row">
             <div>
               <p>Attendees</p>
@@ -55,7 +56,7 @@ function Events() {
               return <Event key={`eventd-${idx}`} info={event} />
             })
           }
-          <Link to='#'>Learn More</Link>
+          <Link to='/cornhole-event'>Learn More</Link>
         </div>
       </section>
     </>

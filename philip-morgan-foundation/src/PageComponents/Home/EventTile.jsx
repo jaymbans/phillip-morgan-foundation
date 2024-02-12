@@ -1,16 +1,16 @@
 import React from 'react'
 
-function EventTile({ info }) {
+function EventTile({ event }) {
 
   return (
     <div className="tile">
       <div>
-        <h1>{info.date.day}</h1>
-        <p className="bolded">{info.date.month}</p>
+        <h1>{event.day}</h1>
+        <p className="bolded">{event.month}</p>
       </div>
-      <p>{info.title}</p>
-      <p className="bolded">{info.timeframe}</p>
-      <p>@{info.locationName}</p>
+      <p>{event.title}</p>
+      <p className="bolded">{event.timeframe}</p>
+      <p>@{event.locationName}</p>
     </div>
   )
 }
