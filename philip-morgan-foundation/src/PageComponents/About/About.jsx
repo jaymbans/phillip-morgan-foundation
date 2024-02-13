@@ -1,10 +1,26 @@
-import React, { useState } from 'react';
-import NavBar from '../NavBar';
-import './_About.scss';
-import largeLogo from '../../media/about-background.png'
-import Footer from '../Footer';
+import React, { useEffect, useState } from 'react';
+import slide1 from "../../media/phil-slide-2.jpg"
+import slide2 from "../../media/phil-slide3.jpg"
+import slide3 from "../../media/phil-and-fam.jpg"
+import slide4 from "../../media/phil-slide-4.JPG"
+import slide5 from "../../media/phil-and-mq.jpg"
+import "./_About.scss"
 
 function About() {
+
+  const [backgroundIndex, setBackgroundIndex] = useState(0)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const nextIndex = (backgroundIndex + 1) % 5;
+
+      setBackgroundIndex(nextIndex);
+    }, 6000);
+
+    return () => clearInterval(interval);
+  }, [backgroundIndex]);
+
+
   const [formData, setFormData] = useState({
     fName: '',
     lName: '',
@@ -32,9 +48,26 @@ function About() {
     return
   }
 
+
   return (
     <>
       <section id="about">
+        <div id="about-hero"
+        >
+          <div className="overlay">
+            {
+              [slide1, slide2, slide3, slide4, slide5].map((slide, index) => (
+                <img
+                  key={index}
+                  src={slide}
+                  alt="photo of phil"
+                  className={`background ${backgroundIndex === index ? "show" : ""}`}
+                />))
+            }
+          </div>
+          <h1>Philip Morgan</h1>
+          <h5>A Fighter, a Father, a Friend</h5>
+        </div>
         <div className='first'>
           <div className="who">
             <h1>Who is Philip Morgan?</h1>
