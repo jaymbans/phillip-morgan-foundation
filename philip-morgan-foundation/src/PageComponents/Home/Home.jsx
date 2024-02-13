@@ -32,12 +32,12 @@ function Home() {
               <h5>experiencing the devastating illness of a loved one</h5>
               <Link to='about' className="white btn">Learn More</Link>
             </div>
-            <div className="title-desc">
+            {/* <div className="title-desc">
               <p className="quote">
                 “Phil’s Mission Lorem Ipsum is simply dummy text of the printing and typesetting industry.”
                 <span> ~Philip Morgan</span>
               </p>
-            </div>
+            </div> */}
           </main>
         </div>
         <div className="homepage-section">
