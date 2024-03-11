@@ -24,15 +24,7 @@ function Events() {
           <h2>First Annual Philip Morgan Foundation Cornhole Tournament</h2>
           <div className="row">
             <div>
-              <p>Attendees</p>
-              <p>1,500+</p>
-            </div>
-            <div>
-              <p>Donors</p>
-              <p>100+</p>
-            </div>
-            <div>
-              <p>Raised</p>
+              <p>Total Donations</p>
               <p>$20,000+</p>
             </div>
           </div>
