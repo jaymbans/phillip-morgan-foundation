@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d36a8345.css",
-    "main.js": "/static/js/main.2a4ef426.js",
+    "main.css": "/static/css/main.c1ddd501.css",
+    "main.js": "/static/js/main.96f51070.js",
     "static/media/phil-slide3.jpg": "/static/media/phil-slide3.93b61fd0adebbc2de353.jpg",
     "static/media/phil-and-friends.jpg": "/static/media/phil-and-friends.8e8861d44684f06a71dd.jpg",
     "static/media/phil-slide-4.JPG": "/static/media/phil-slide-4.bfc3facba1905ea13a79.JPG",
@@ -14,11 +14,11 @@
     "static/media/cartoon-sky.jpeg": "/static/media/cartoon-sky.62ab34261427b64a20f6.jpeg",
     "static/media/pmf-white-bg-logo-high-res.png": "/static/media/pmf-white-bg-logo-high-res.d8cf5937548cdb18f67a.png",
     "index.html": "/index.html",
-    "main.d36a8345.css.map": "/static/css/main.d36a8345.css.map",
-    "main.2a4ef426.js.map": "/static/js/main.2a4ef426.js.map"
+    "main.c1ddd501.css.map": "/static/css/main.c1ddd501.css.map",
+    "main.96f51070.js.map": "/static/js/main.96f51070.js.map"
   },
   "entrypoints": [
-    "static/css/main.d36a8345.css",
-    "static/js/main.2a4ef426.js"
+    "static/css/main.c1ddd501.css",
+    "static/js/main.96f51070.js"
   ]
 }
