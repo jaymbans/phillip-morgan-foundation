@@ -21,16 +21,16 @@ function App() {
           <Route path="events" element={<PageLayout children={<Events />} />} />
           <Route path="contact" element={<PageLayout children={<Contact />} />} />
           <Route path="donate" element={<PageLayout children={<Donate />} />} />
-          <Route path="cornhole-event"
-            element={<CornholeEvent />} />
-          <Route path="cornhole-event/donate"
+          {/* <Route path="cornhole-event"
+            element={<CornholeEvent />} /> */}
+          {/* <Route path="cornhole-event/donate"
             element={<PageLayout children={
               <Donate
                 title='Buy tickets to the 2nd Annual PMF Foundation Cornhole torunament by March 31st'
                 action='Buy tickets through'
                 qrLink={require("./media/cornhole-qr-code.png")}
                 formLink={"https://www.zeffy.com/en-US/ticketing/ef02f6bb-8a09-4839-b3a7-83d3a872cc10"} />
-            } />} />
+            } />} /> */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
