@@ -7,7 +7,8 @@ const eventsData = [
     locationAddress: '15 River Vale Road, River Vale, NJ 07675',
     sponsorUrl: '',
     timeframe: "1pm-5pm",
-    isActive: true
+    isActive: true,
+    attachments: []
   },
   {
     day: '28',
@@ -17,7 +18,11 @@ const eventsData = [
     locationAddress: '20 Palisade Avenue, Emerson, NJ 07630',
     sponsorUrl: '',
     timeframe: "9am-2pm",
-    isActive: true
+    isActive: true,
+    attachments: [
+      { name: "Flyer", url: require("../PageComponents/Events/attachments/Philip Morgan Foundation April 28, 2024 flyer.pdf") },
+      { name: "Rapid Pass", url: require("../PageComponents/Events/attachments/rapid-pass.pdf") }
+    ]
   },
 ]
 

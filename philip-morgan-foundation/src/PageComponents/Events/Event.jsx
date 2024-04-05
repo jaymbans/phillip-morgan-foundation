@@ -26,6 +26,17 @@ function Event({ info }) {
             </button>
             <p>{info.locationAddress}</p>
           </span>
+          {
+            info.attachments?.length && (
+              <div className="attachments">
+                {
+                  info.attachments?.length && info.attachments.map(attachment => {
+                    return <a href={attachment.url} target='_blank'>{attachment.name}</a>
+                  })
+                }
+              </div>
+            )
+          }
         </div>
       </div>
     </div>

@@ -245,6 +245,17 @@ section#events {
             }
           }
         }
+
+        .attachments {
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+
+          a {
+            margin: 0 5px;
+          }
+        }
       }
 
     }

@@ -36,7 +36,6 @@ function Events() {
               return <Event key={`eventd-${idx}`} info={event} />
             })
           }
-          <Link to='/cornhole-event'>Learn More</Link>
         </div>
       </section>
     </>
