@@ -32,7 +32,7 @@ function Events() {
         <div className="upcoming">
           <h2>Upcoming...</h2>
           {
-            eventsData.map((event, idx) => {
+            eventsData.filter(event => event.isActive).map((event, idx) => {
               return <Event key={`eventd-${idx}`} info={event} />
             })
           }

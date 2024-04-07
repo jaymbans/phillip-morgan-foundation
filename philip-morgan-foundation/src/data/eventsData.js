@@ -7,7 +7,7 @@ const eventsData = [
     locationAddress: '15 River Vale Road, River Vale, NJ 07675',
     sponsorUrl: '',
     timeframe: "1pm-5pm",
-    isActive: true,
+    isActive: false,
     attachments: []
   },
   {
