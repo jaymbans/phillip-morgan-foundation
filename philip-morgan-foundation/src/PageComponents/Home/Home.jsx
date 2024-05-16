@@ -11,16 +11,6 @@ import eventsData from '../../data/eventsData';
 
 function Home() {
 
-  const [upcomingEvents, setUpcomingEvents] = useState([
-    {
-      date: { month: 'April', day: '06' },
-      title: '2nd Annual Philip Morgan Foundation Cornhole Tournament',
-      timeframe: '10am-7pm',
-      locationName: 'Valley Brook Country Club'
-    },
-  ]);
-
-
   return (
     <div>
       <section id="home">
@@ -35,7 +25,7 @@ function Home() {
           </main>
         </div>
         <div className="homepage-section">
-          <h1>Ways we help</h1>
+          <h1 className='underline-title'>Ways we help</h1>
           <main>
             {
               waysWehelp.map((info, idx) => {
@@ -45,7 +35,7 @@ function Home() {
           </main>
         </div>
         <div className="homepage-section">
-          <h1>Join Us</h1>
+          <h1 className='underline-title'>Join Us</h1>
           <div>
             <img src={calendarIcon} alt="" />
             <h2>Upcoming Events</h2>

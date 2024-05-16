@@ -79,7 +79,7 @@ section {
     margin: 65px auto;
     @include page-layout;
 
-    h1 {
+    .underline-title {
       font-family: $arimo;
       color: $phil-blue;
       font-size: 40px;

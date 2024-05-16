@@ -1,6 +1,4 @@
-:root {
-  font-size: 16px;
-}
+@import './variables';
 
 //Resetting to default styling
 * {
@@ -46,5 +44,28 @@ $page-width: 1200px;
 @media only screen and (max-width: 700px) {
   :root {
     font-size: 12px;
+  }
+}
+
+// global styles
+.underline-title {
+  font-family: $arimo;
+  color: $phil-blue;
+  font-size: 40px;
+  text-align: center;
+  margin: 70px 0;
+  position: relative;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  font-style: italic;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 3px;
+    background: $phil-blue;
+    bottom: -10px;
   }
 }

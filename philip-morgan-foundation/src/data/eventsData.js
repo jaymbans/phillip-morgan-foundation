@@ -18,7 +18,7 @@ const eventsData = [
     locationAddress: '20 Palisade Avenue, Emerson, NJ 07630',
     sponsorUrl: '',
     timeframe: "9am-2pm",
-    isActive: true,
+    isActive: false,
     attachments: [
       { name: "Flyer", url: require("../PageComponents/Events/attachments/Philip Morgan Foundation April 28, 2024 flyer.pdf") },
       { name: "Rapid Pass", url: require("../PageComponents/Events/attachments/rapid-pass.pdf") }
