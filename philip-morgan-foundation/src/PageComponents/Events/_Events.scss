@@ -84,6 +84,20 @@ section#events {
     font-family: $poppins;
     color: $phil-blue;
 
+    h1 {
+      font-size: 40px;
+      font-weight: normal;
+      width: 100%;
+      font-style: italic;
+      font-family: $poppins;
+      font-size: 2.5rem;
+      padding-left: 20px;
+
+      @media (max-width:700px) {
+        text-align: center;
+      }
+    }
+
     h2 {
       margin: 15px 0;
       font-size: 2.5rem;
@@ -92,12 +106,8 @@ section#events {
 
       @media (max-width:700px) {
         text-align: center;
+        font-size: 1.8rem;
       }
-    }
-
-    h2:first-child {
-      font-weight: normal;
-      font-style: italic;
     }
 
     &>div:last-child {
@@ -136,9 +146,61 @@ section#events {
         align-items: center;
       }
     }
+
+    .event-stats {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+
+
+      .stat {
+        font-family: $poppins;
+        text-align: center;
+        width: 300px;
+
+        .desc {
+          font-size: 30px;
+          color: #717171;
+        }
+
+        .data {
+          font-size: 40px;
+          font-weight: bold;
+          font-style: italic;
+        }
+      }
+    }
+
+    .slider-container {
+      .carousel {
+        img {
+          height: 700px;
+          object-fit: cover;
+          object-position: center;
+          filter: brightness(.5);
+        }
+      }
+    }
+
+    .greeting {
+      font-weight: normal;
+      font-size: 30px;
+      font-style: italic;
+      margin-top: 30px;
+
+      @media (max-width:700px) {
+        font-size: 18px;
+      }
+    }
   }
 
   .upcoming {
+    padding: 0 20px;
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
     h2 {
       font-family: $poppins;
@@ -153,6 +215,14 @@ section#events {
       font-weight: normal;
       font-style: italic;
       color: $phil-blue;
+    }
+
+    p {
+      color: gray;
+      font-size: 25px;
+      margin: 5px auto;
+      text-align: center;
+      font-family: $poppins;
     }
 
     a {
@@ -281,11 +351,18 @@ section#events {
       .event-info {
         background: white;
         border-radius: 30px;
-        height: 615px;
+        min-height: 615px;
         width: 524px;
         margin: 5%;
         padding: 25px;
         font-family: $poppins;
+
+        @media (max-width:700px) {
+          width: 100%;
+          margin: 0;
+          margin-bottom: 20px;
+        }
+
 
         .icon-container {
           height: 175px;

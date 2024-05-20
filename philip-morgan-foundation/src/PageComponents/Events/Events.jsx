@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import CornHoleIcon from "../../components/SVGs/CornholeIcon";
 import whiteLogo from '../../media/white-logo.png';
 import Event from './Event';
@@ -6,6 +6,10 @@ import './_Events.scss';
 import eventsData from '../../data/eventsData';
 
 function Events() {
+  const [upcomingEvents, setUpcomingEvents] = useState(
+    eventsData.filter(event => event.isActive).map((event, idx) => {
+      return <Event key={`eventd-${idx}`} info={event} />
+    }))
 
 
   return (
@@ -19,20 +23,13 @@ function Events() {
           </h2>
           <h1>Events</h1>
         </div>
-        <div className="previously">
-          <h2>previously on the...</h2>
-          <h2>First Annual Philip Morgan Foundation Cornhole Tournament</h2>
-          <div className="row">
-            <div>
-              <p>Total Donations</p>
-              <p>$20,000+</p>
-            </div>
-          </div>
-        </div>
         <div className="upcoming">
           <h2>Upcoming...</h2>
           {
-            eventsData.filter(event => event.isActive).map((event, idx) => {
+            upcomingEvents.length ? "" : <p>There are currently no upcoming events</p>
+          }
+          {
+            upcomingEvents.map((event, idx) => {
               return <Event key={`eventd-${idx}`} info={event} />
             })
           }
@@ -64,6 +61,81 @@ function Events() {
               </p>
             </div>
           </div>
+        </div>
+        <div className="previously">
+          <h1>Previously...</h1>
+          <h2>
+            The Second Annual Philip Morgan Foundation Corn Hole Tournament
+          </h2>
+          <div className="event-stats">
+            <div className="stat">
+              <p className="desc">Attendees</p>
+              <p className="data">134</p>
+            </div>
+            <div className="stat">
+              <p className="desc">Donations</p>
+              <p className="data">$12,000+</p>
+            </div>
+          </div>
+          <div className="slider-container container">
+            <div id="carouselExampleIndicators" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src={require("../../media/cht2024-1.jpg")} class="d-block w-100" alt="pictures of participants at cornhole tournament" />
+                </div>
+                <div class="carousel-item">
+                  <img src={require("../../media/cht2024-2.jpg")} class="d-block w-100" alt="pictures of participants at cornhole tournament" />
+                </div>
+                <div class="carousel-item">
+                  <img src={require("../../media/cht2024-3.jpg")} class="d-block w-100" alt="pictures of participants at cornhole tournament" />
+                </div>
+                <div class="carousel-item">
+                  <img src={require("../../media/cht2024-4.jpg")} class="d-block w-100" alt="pictures of participants at cornhole tournament" />
+                </div>
+                <div class="carousel-item">
+                  <img src={require("../../media/cht2024-5.jpg")} class="d-block w-100" alt="pictures of participants at cornhole tournament" />
+                </div>
+                <div class="carousel-item">
+                  <img src={require("../../media/cht2024-6.jpg")} class="d-block w-100" alt="pictures of participants at cornhole tournament" />
+                </div>
+                <div class="carousel-item">
+                  <img src={require("../../media/cht2024-7.jpg")} class="d-block w-100" alt="pictures of participants at cornhole tournament" />
+                </div>
+                <div class="carousel-item">
+                  <img src={require("../../media/cht2024-8.jpg")} class="d-block w-100" alt="pictures of participants at cornhole tournament" />
+                </div>
+                <div class="carousel-item">
+                  <img src={require("../../media/cht2024-9.jpg")} class="d-block w-100" alt="pictures of participants at cornhole tournament" />
+                </div>
+                <div class="carousel-item">
+                  <img src={require("../../media/cht2024-10.jpg")} class="d-block w-100" alt="pictures of participants at cornhole tournament" />
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <h2 className='greeting'>
+            Thank you for participating!
+          </h2>
         </div>
       </section>
     </>
