@@ -10,6 +10,8 @@ import { waysWehelp } from "../../data/homepageData"
 import eventsData from '../../data/eventsData';
 
 function Home() {
+  const [upcomingEvents, setUpcomingEvents] = useState(
+    eventsData.filter(event => event.isActive))
 
   return (
     <div>
@@ -41,6 +43,9 @@ function Home() {
             <h2>Upcoming Events</h2>
           </div>
           <div className="events">
+            {
+              upcomingEvents.length ? "" : <p className='disclaimer'>There are currently no upcoming events</p>
+            }
             {
               eventsData.map((event, idx) => {
                 if (event.isActive) {

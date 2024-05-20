@@ -77,7 +77,6 @@ section {
 
   .homepage-section {
     margin: 65px auto;
-    @include page-layout;
 
     .underline-title {
       font-family: $arimo;
@@ -230,6 +229,16 @@ section {
         margin: 15px auto;
         text-transform: uppercase;
         text-align: center;
+      }
+    }
+
+    .events {
+      p.disclaimer {
+        color: gray;
+        font-size: 25px;
+        margin: 5px auto;
+        text-align: center;
+        font-family: $poppins;
       }
     }
   }

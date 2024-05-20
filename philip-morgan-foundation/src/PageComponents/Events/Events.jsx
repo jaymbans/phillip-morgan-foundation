@@ -7,10 +7,11 @@ import eventsData from '../../data/eventsData';
 
 function Events() {
   const [upcomingEvents, setUpcomingEvents] = useState(
-    eventsData.filter(event => event.isActive).map((event, idx) => {
-      return <Event key={`eventd-${idx}`} info={event} />
-    }))
+    eventsData.filter(event => event.isActive))
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <>
