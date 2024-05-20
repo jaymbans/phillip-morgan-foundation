@@ -143,15 +143,16 @@ section#about {
     color: white;
     width: 100%;
 
-    &>.row:first-child {
+    &>.flex-row:first-child {
       width: 100%;
 
       h1 {
         color: white;
         display: flex;
-        line-height: .5;
+        margin-top: -10px;
         display: inline-block;
         margin-right: 30px;
+        text-wrap: wrap;
       }
 
       p {
@@ -161,7 +162,7 @@ section#about {
       }
     }
 
-    .row:nth-of-type(2) {
+    .flex-row:nth-of-type(2) {
       justify-content: center;
       align-items: center;
       min-height: 425px;
@@ -189,7 +190,7 @@ section#about {
             font-family: $poppins;
           }
 
-          .row {
+          .flex-row {
             justify-content: space-between;
 
             input {
@@ -212,6 +213,7 @@ section#about {
 
           button {
             color: #958FA7;
+            background: white;
             padding: 5%;
             border-radius: 20px;
             margin: 5px;
@@ -265,7 +267,7 @@ section#about {
     font-family: $poppins;
   }
 
-  .row {
+  .flex-row {
     display: flex;
   }
 
@@ -302,7 +304,7 @@ section#about {
     }
 
     .join-us {
-      &>.row:first-child {
+      &>.flex-row:first-child {
         flex-direction: column;
         align-items: center;
 
@@ -322,7 +324,7 @@ section#about {
         margin: 25px 0;
       }
 
-      &>.row:nth-child(2) {
+      &>.flex-row:nth-child(2) {
         flex-direction: column;
 
         &::after {
@@ -333,7 +335,7 @@ section#about {
           width: 100%;
 
           form {
-            .row {
+            .flex-row {
               flex-direction: column;
 
               input {

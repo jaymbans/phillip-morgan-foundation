@@ -140,17 +140,17 @@ function About() {
           </p>
         </div>
         <div className="join-us">
-          <div className="row">
+          <div className="flex-row">
             <h1>Join Us</h1>
             <p>
               at our upcoming events, lend a helping hand, and experience the joy of giving back. Whether you're passionate about making a difference or simply want to connect with like-minded individuals, we welcome you with open arms. Your involvement matters, and together, we can create positive change.
             </p>
           </div>
-          <div className="row">
+          <div className="flex-row">
             <div>
               <h3>keep in touch</h3>
               <form>
-                <div className="row">
+                <div className="flex-row">
                   <input onChange={updateForm} id='fName' type="text" placeholder='First Name' />
                   <input onChange={updateForm} id='lName' type="text" placeholder='Last Name' />
                 </div>
