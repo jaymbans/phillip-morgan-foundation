@@ -1,7 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.c0d38774.css",
-    "main.js": "/static/js/main.22069d27.js",
+    "main.css": "/static/css/main.2ded8223.css",
+    "main.js": "/static/js/main.c513b2ed.js",
+    "static/media/cht2024-7.jpg": "/static/media/cht2024-7.fabc4665d34d19db0e70.jpg",
+    "static/media/cht2024-1.jpg": "/static/media/cht2024-1.7a086135ab1416d5b0ac.jpg",
+    "static/media/cht2024-8.jpg": "/static/media/cht2024-8.22702c7640d06accf930.jpg",
+    "static/media/cht2024-5.jpg": "/static/media/cht2024-5.f0409618e44abc5718f3.jpg",
+    "static/media/cht2024-6.jpg": "/static/media/cht2024-6.809944d7eb660b176df3.jpg",
+    "static/media/cht2024-10.jpg": "/static/media/cht2024-10.2d4ef0647ecf818db137.jpg",
+    "static/media/cht2024-3.jpg": "/static/media/cht2024-3.f547cc0ea4c3df6dcfb1.jpg",
+    "static/media/cht2024-9.jpg": "/static/media/cht2024-9.6b7dfe8efbfd5bfe45f0.jpg",
+    "static/media/cht2024-2.jpg": "/static/media/cht2024-2.10e06759abc66a01ae5a.jpg",
+    "static/media/cht2024-4.jpg": "/static/media/cht2024-4.52ff438247735825cf0e.jpg",
     "static/media/rapid-pass.pdf": "/static/media/rapid-pass.87014234df9b4211b7e3.pdf",
     "static/media/phil-slide3.jpg": "/static/media/phil-slide3.93b61fd0adebbc2de353.jpg",
     "static/media/phil-and-friends.jpg": "/static/media/phil-and-friends.8e8861d44684f06a71dd.jpg",
@@ -16,11 +26,11 @@
     "static/media/cartoon-sky.jpeg": "/static/media/cartoon-sky.62ab34261427b64a20f6.jpeg",
     "static/media/pmf-white-bg-logo-high-res.png": "/static/media/pmf-white-bg-logo-high-res.d8cf5937548cdb18f67a.png",
     "index.html": "/index.html",
-    "main.c0d38774.css.map": "/static/css/main.c0d38774.css.map",
-    "main.22069d27.js.map": "/static/js/main.22069d27.js.map"
+    "main.2ded8223.css.map": "/static/css/main.2ded8223.css.map",
+    "main.c513b2ed.js.map": "/static/js/main.c513b2ed.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0d38774.css",
-    "static/js/main.22069d27.js"
+    "static/css/main.2ded8223.css",
+    "static/js/main.c513b2ed.js"
   ]
 }
