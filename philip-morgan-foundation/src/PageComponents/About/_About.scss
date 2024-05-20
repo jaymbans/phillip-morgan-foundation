@@ -143,7 +143,7 @@ section#about {
     color: white;
     width: 100%;
 
-    &>.flex-row:first-child {
+    &>.row-flex:first-child {
       width: 100%;
 
       h1 {
@@ -162,7 +162,7 @@ section#about {
       }
     }
 
-    .flex-row:nth-of-type(2) {
+    .row-flex:nth-of-type(2) {
       justify-content: center;
       align-items: center;
       min-height: 425px;
@@ -190,7 +190,7 @@ section#about {
             font-family: $poppins;
           }
 
-          .flex-row {
+          .row-flex {
             justify-content: space-between;
 
             input {
@@ -267,7 +267,7 @@ section#about {
     font-family: $poppins;
   }
 
-  .flex-row {
+  .row-flex {
     display: flex;
   }
 
@@ -304,7 +304,7 @@ section#about {
     }
 
     .join-us {
-      &>.flex-row:first-child {
+      &>.row-flex:first-child {
         flex-direction: column;
         align-items: center;
 
@@ -324,7 +324,7 @@ section#about {
         margin: 25px 0;
       }
 
-      &>.flex-row:nth-child(2) {
+      &>.row-flex:nth-child(2) {
         flex-direction: column;
 
         &::after {
@@ -335,7 +335,7 @@ section#about {
           width: 100%;
 
           form {
-            .flex-row {
+            .row-flex {
               flex-direction: column;
 
               input {
