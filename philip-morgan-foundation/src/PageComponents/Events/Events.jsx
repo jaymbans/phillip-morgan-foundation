@@ -44,7 +44,7 @@ function Events() {
               </div>
               <h3>Corn Hole Tournaments</h3>
               <p>
-                We host corn hole tournaments as a fundraising initiative to support pediatric cancer. These tournaments serve as a fun and engaging way for our community to come together and raise vital funds for our cause. By participating in our tournaments, you're not only enjoying a day of friendly competition but also contributing directly to a beautiful cause.
+                We host corn hole tournaments as a fundraising initiative to support Phil's mission. These tournaments serve as a fun and engaging way for our community to come together and raise vital funds for our cause. By participating in our tournaments, you're not only enjoying a day of friendly competition but also contributing directly to a beautiful cause.
               </p>
             </div>
             <div className="event-info">
