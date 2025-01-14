@@ -4,6 +4,7 @@ import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 function Event({ info }) {
   const copyLocationName = () => {
     navigator.clipboard.writeText(info.locationAddress)
+    return
   }
 
   return (
@@ -27,7 +28,7 @@ function Event({ info }) {
             <p>{info.locationAddress}</p>
           </span>
           {
-            info.attachments?.length && (
+            info.attachments.length > 0 && (
               <div className="attachments">
                 {
                   info.attachments?.length && info.attachments.map(attachment => {

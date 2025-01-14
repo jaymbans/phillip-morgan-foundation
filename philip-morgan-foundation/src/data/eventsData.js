@@ -24,6 +24,17 @@ const eventsData = [
       { name: "Rapid Pass", url: require("../PageComponents/Events/attachments/rapid-pass.pdf") }
     ]
   },
+  {
+    day: '27',
+    month: 'April',
+    title: 'American Red Cross Blood Drive',
+    locationName: 'Emerson Senior Center',
+    locationAddress: '20 Palisade Avenue, Emerson, NJ 07630',
+    sponsorUrl: '',
+    timeframe: "9am-2pm",
+    isActive: true,
+    attachments: []
+  },
 ]
 
 export default eventsData
