@@ -33,7 +33,9 @@ const eventsData = [
     sponsorUrl: '',
     timeframe: "1pm-5pm",
     isActive: true,
-    attachments: []
+    attachments: [
+      { name: "Learn More", url: "#/cornhole-event" },
+    ]
   },
   {
     day: '27',
@@ -43,7 +45,7 @@ const eventsData = [
     locationAddress: '20 Palisade Avenue, Emerson, NJ 07630',
     sponsorUrl: '',
     timeframe: "9am-2pm",
-    isActive: true,
+    isActive: false,
     attachments: []
   },
 ]
