@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 function EventCountDown() {
   const currentYear = new Date().getFullYear();
-  const targetDate = new Date(currentYear, 2, 31, 0, 0, 0)
+  const targetDate = new Date(currentYear, 2, 15, 0, 0, 0)
 
   const calculateTimeLeft = () => {
     const now = new Date().getTime();
@@ -79,7 +79,7 @@ function EventCountDown() {
         </div>
       </div>
       <h1 className="middle">
-        HURRY! GET YOUR TICKETS TO OUR 2ND ANNUAL CORNHOLE TOURNAMENT
+        HURRY! GET YOUR TICKETS TO OUR 3RD ANNUAL CORNHOLE TOURNAMENT
       </h1>
       <div className="right">
         <Link to="/cornhole-event">Learn More</Link>

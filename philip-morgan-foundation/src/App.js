@@ -21,16 +21,16 @@ function App() {
           <Route path="events" element={<PageLayout children={<Events />} />} />
           <Route path="contact" element={<PageLayout children={<Contact />} />} />
           <Route path="donate" element={<PageLayout children={<Donate />} />} />
-          {/* <Route path="cornhole-event"
-            element={<CornholeEvent />} /> */}
-          {/* <Route path="cornhole-event/donate"
+          <Route path="cornhole-event"
+            element={<CornholeEvent />} />
+          <Route path="cornhole-event/donate"
             element={<PageLayout children={
               <Donate
-                title='Buy tickets to the 2nd Annual PMF Foundation Cornhole torunament by March 31st'
+                title='Buy tickets to the 3rd Annual PMF Foundation Cornhole torunament by March 15th'
                 action='Buy tickets through'
                 qrLink={require("./media/cornhole-qr-code.png")}
-                formLink={"https://www.zeffy.com/en-US/ticketing/ef02f6bb-8a09-4839-b3a7-83d3a872cc10"} />
-            } />} /> */}
+                formLink={"https://www.zeffy.com/embed/ticketing/3rd-annual-philip-morgan-foundation-cornhole-tournament-fundraiser"} />
+            } />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>

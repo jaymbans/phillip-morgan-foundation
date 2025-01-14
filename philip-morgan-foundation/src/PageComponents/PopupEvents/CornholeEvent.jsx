@@ -17,11 +17,11 @@ function CornholeEvent() {
           <div className="content">
             <div className="left">
               <h1>Join Us</h1>
-              <h3>
-                FOR THE 2ND ANNUAL PHILIP MORGAN FOUNDATION CORNHOLE TOURNAMENT
+              <h3 className='text-white'>
+                FOR THE 3RD ANNUAL PHILIP MORGAN FOUNDATION CORNHOLE TOURNAMENT
               </h3>
               <div className="link-container">
-                <a href={"https://res.cloudinary.com/hxn9dbuhd/image/upload/v1706203924/hdcduxpmixnvul37uamq.png"}
+                <a href={"https://res.cloudinary.com/hxn9dbuhd/image/upload/v1736027321/xxksd4zoasssdcg3yxda.png"}
                   target='_blank'>
                   Open Flyer
                 </a>
@@ -30,7 +30,7 @@ function CornholeEvent() {
                 </Link>
               </div>
               <p>
-                Indoors at Valley Brook Country Club | April 06 at 1pm
+                Indoors at Valley Brook Country Club | March 22 at 1pm
               </p>
               <small>
                 15 River Vale Road
@@ -45,6 +45,24 @@ function CornholeEvent() {
               <small>
                 All proceeds go to the Philip Morgan Foundation Inc. 501 (c) (3)
               </small>
+              <div className='rules d-flex align-items-center justify-content-center flex-column'>
+                <h3 className='text-primary'>RULES</h3>
+                <strong>
+                  <h4>
+                    <u className='text-primary'>
+                      THIS IS A FUNDRAISER
+                    </u>
+                  </h4>
+                </strong>
+                <h4 className="text-primary">
+                  <ol>
+                    <li>It is not a regulation event</li>
+                    <li>Distance & Height between boards may vary</li>
+                    <li>Everyone <u>must</u> use bags provided</li>
+                    <li>If a bag hits the ceiling, the point does not count</li>
+                  </ol>
+                </h4>
+              </div>
             </div>
             <div className="right">
               <Link to="/events">
@@ -55,7 +73,7 @@ function CornholeEvent() {
             </div>
           </div>
           <div className="phone-number">
-            Text or Call 201 294 3265 to reserve tickets by March 31st
+            Text or Call 201 294 3265 to reserve tickets by March 15th
           </div>
         </main>
       </div>

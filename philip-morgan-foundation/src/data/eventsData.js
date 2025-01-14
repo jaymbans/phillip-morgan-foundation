@@ -25,6 +25,17 @@ const eventsData = [
     ]
   },
   {
+    day: '15',
+    month: 'Mar',
+    title: '3rd Annual Philip Morgan Foundation Cornhole Tournament',
+    locationName: 'Valley Brook Country Club',
+    locationAddress: '15 River Vale Road, River Vale, NJ 07675',
+    sponsorUrl: '',
+    timeframe: "1pm-5pm",
+    isActive: true,
+    attachments: []
+  },
+  {
     day: '27',
     month: 'April',
     title: 'American Red Cross Blood Drive',
