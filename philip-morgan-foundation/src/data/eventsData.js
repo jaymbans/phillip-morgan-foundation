@@ -25,7 +25,7 @@ const eventsData = [
     ]
   },
   {
-    day: '15',
+    day: '22',
     month: 'Mar',
     title: '3rd Annual Philip Morgan Foundation Cornhole Tournament',
     locationName: 'Valley Brook Country Club',
@@ -45,8 +45,10 @@ const eventsData = [
     locationAddress: '20 Palisade Avenue, Emerson, NJ 07630',
     sponsorUrl: '',
     timeframe: "9am-2pm",
-    isActive: false,
-    attachments: []
+    isActive: true,
+    attachments: [
+      { name: "Rapid Pass", url: require("../PageComponents/Events/attachments/rapid-pass.pdf") }
+    ]
   },
 ]
 
