@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.054ba2e2.css",
-    "main.js": "/static/js/main.5490fa3b.js",
+    "main.js": "/static/js/main.08e209df.js",
     "static/media/cht2024-7.jpg": "/static/media/cht2024-7.fabc4665d34d19db0e70.jpg",
     "static/media/cht2024-1.jpg": "/static/media/cht2024-1.7a086135ab1416d5b0ac.jpg",
     "static/media/cht2024-8.jpg": "/static/media/cht2024-8.22702c7640d06accf930.jpg",
@@ -27,10 +27,10 @@
     "static/media/pmf-white-bg-logo-high-res.png": "/static/media/pmf-white-bg-logo-high-res.d8cf5937548cdb18f67a.png",
     "index.html": "/index.html",
     "main.054ba2e2.css.map": "/static/css/main.054ba2e2.css.map",
-    "main.5490fa3b.js.map": "/static/js/main.5490fa3b.js.map"
+    "main.08e209df.js.map": "/static/js/main.08e209df.js.map"
   },
   "entrypoints": [
     "static/css/main.054ba2e2.css",
-    "static/js/main.5490fa3b.js"
+    "static/js/main.08e209df.js"
   ]
 }
