@@ -21,8 +21,8 @@ function App() {
           <Route path="events" element={<PageLayout children={<Events />} />} />
           <Route path="contact" element={<PageLayout children={<Contact />} />} />
           <Route path="donate" element={<PageLayout children={<Donate />} />} />
-          {/* <Route path="cornhole-event"
-            element={<CornholeEvent />} /> */}
+          <Route path="cornhole-event"
+            element={<CornholeEvent />} />
           <Route path="cornhole-event/donate"
             element={<PageLayout children={
               <Donate
