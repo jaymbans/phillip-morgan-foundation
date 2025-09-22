@@ -23,14 +23,6 @@ function App() {
           <Route path="donate" element={<PageLayout children={<Donate />} />} />
           <Route path="cornhole-event"
             element={<CornholeEvent />} />
-          <Route path="cornhole-event/donate"
-            element={<PageLayout children={
-              <Donate
-                title='Buy tickets to the 3rd Annual PMF Foundation Cornhole torunament by March 15th'
-                action='Buy tickets through'
-                qrLink={require("./media/cornhole-qr-code.png")}
-                formLink={"https://www.zeffy.com/embed/ticketing/3rd-annual-philip-morgan-foundation-cornhole-tournament-fundraiser"} />
-            } />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>

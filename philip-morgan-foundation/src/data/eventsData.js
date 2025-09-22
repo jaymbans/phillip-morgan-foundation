@@ -32,7 +32,7 @@ const eventsData = [
     locationAddress: '15 River Vale Road, River Vale, NJ 07675',
     sponsorUrl: '',
     timeframe: "1pm-5pm",
-    isActive: true,
+    isActive: false,
     attachments: [
       { name: "Learn More", url: "#/cornhole-event" },
     ]
@@ -45,7 +45,7 @@ const eventsData = [
     locationAddress: '20 Palisade Avenue, Emerson, NJ 07630',
     sponsorUrl: '',
     timeframe: "9am-2pm",
-    isActive: true,
+    isActive: false,
     attachments: [
       { name: "Rapid Pass", url: require("../PageComponents/Events/attachments/rapid-pass.pdf") }
     ]

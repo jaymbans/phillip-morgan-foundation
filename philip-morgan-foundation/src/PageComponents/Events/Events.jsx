@@ -6,12 +6,12 @@ import './_Events.scss';
 import eventsData from '../../data/eventsData';
 
 function Events() {
-  const [upcomingEvents, setUpcomingEvents] = useState(
-    eventsData.filter(event => event.isActive))
-
+  const [upcomingEvents, setUpcomingEvents] = useState([])
   useEffect(() => {
+    const newEvents = eventsData.filter(eventData => eventData.isActive)
+    setUpcomingEvents(newEvents)
     window.scrollTo(0, 0)
-  }, [])
+  }, [eventsData])
 
   return (
     <>

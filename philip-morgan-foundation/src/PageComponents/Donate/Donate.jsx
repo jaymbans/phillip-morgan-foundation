@@ -23,7 +23,7 @@ function Donate({
           <h2>{`${action} form`}</h2>
         </div>
         <div className='donation-iframe'>
-          <iframe title='Donation form powered by Zeffy' src={formLink} allowpaymentrequest allowTransparency="true"></iframe>
+          <iframe title='Donation form powered by Zeffy' src={formLink} allow="payment" allowTransparency="true"></iframe>
         </div>
       </section >
     </>
