@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.054ba2e2.css",
-    "main.js": "/static/js/main.4d5b4cbd.js",
+    "main.css": "/static/css/main.f97e1650.css",
+    "main.js": "/static/js/main.160074b9.js",
     "static/media/cht2024-7.jpg": "/static/media/cht2024-7.fabc4665d34d19db0e70.jpg",
     "static/media/cht2024-1.jpg": "/static/media/cht2024-1.7a086135ab1416d5b0ac.jpg",
     "static/media/cht2024-8.jpg": "/static/media/cht2024-8.22702c7640d06accf930.jpg",
@@ -26,11 +26,11 @@
     "static/media/cartoon-sky.jpeg": "/static/media/cartoon-sky.62ab34261427b64a20f6.jpeg",
     "static/media/pmf-white-bg-logo-high-res.png": "/static/media/pmf-white-bg-logo-high-res.d8cf5937548cdb18f67a.png",
     "index.html": "/index.html",
-    "main.054ba2e2.css.map": "/static/css/main.054ba2e2.css.map",
-    "main.4d5b4cbd.js.map": "/static/js/main.4d5b4cbd.js.map"
+    "main.f97e1650.css.map": "/static/css/main.f97e1650.css.map",
+    "main.160074b9.js.map": "/static/js/main.160074b9.js.map"
   },
   "entrypoints": [
-    "static/css/main.054ba2e2.css",
-    "static/js/main.4d5b4cbd.js"
+    "static/css/main.f97e1650.css",
+    "static/js/main.160074b9.js"
   ]
 }
