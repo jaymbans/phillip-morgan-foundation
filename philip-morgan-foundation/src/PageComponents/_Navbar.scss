@@ -54,6 +54,10 @@ nav {
     padding: 0px 20px;
     z-index: 999;
 
+    .menu-close-btn {
+      display: none;
+    }
+
     a {
       background: none;
       font-size: 20px;
@@ -66,6 +70,10 @@ nav {
     & a:last-child {
       display: none;
     }
+  }
+
+  .menu-overlay {
+    display: none;
   }
 
   .nav-right {
@@ -102,18 +110,35 @@ nav {
     }
 
     .nav-mid {
-      button {
+      .menu-close-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: none;
+        border: none;
+        color: $phil-blue;
+        cursor: pointer;
+        padding: 0;
+        margin-bottom: 20px;
+        font-size: 32px;
+
+        svg {
+          font-size: 32px;
+        }
+      }
+
+      button:not(.menu-close-btn) {
         margin: 5% 0;
       }
 
       transform: translateX(100vw);
       flex-direction: column;
       position: fixed;
-      height: 100vh;
-      width: 220px;
-      top: 80px;
+      top: 0;
       right: 0;
-      bottom: 0;
+      width: 220px;
+      height: 100vh;
+      min-height: 100vh;
       justify-content: flex-start;
       align-items: flex-start;
       padding-top: 2%;
@@ -128,9 +153,22 @@ nav {
 
     .nav-mid.active {
       transform: translateX(0);
-      position: absolute;
+      position: fixed;
       display: flex;
       background: white;
+      z-index: 9999;
+    }
+
+    .nav-mid.active ~ .menu-overlay {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 9998;
+      cursor: pointer;
     }
 
     .nav-right {

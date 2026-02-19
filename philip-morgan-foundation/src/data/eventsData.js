@@ -50,6 +50,19 @@ const eventsData = [
       { name: "Rapid Pass", url: require("../PageComponents/Events/attachments/rapid-pass.pdf") }
     ]
   },
+  {
+    day: '18',
+    month: 'April',
+    title: '4th Annual Philip Morgan Foundation Cornhole Tournament',
+    locationName: 'Valley Brook Country Club',
+    locationAddress: '15 River Vale Road, River Vale, NJ 07675',
+    sponsorUrl: '',
+    timeframe: "1pm-5pm",
+    isActive: true,
+    attachments: [
+      { name: "Learn More", url: "#/cornhole-event" },
+    ]
+  },
 ]
 
 export default eventsData

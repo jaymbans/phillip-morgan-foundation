@@ -2,33 +2,45 @@ import React, { useEffect } from 'react'
 import './_Navbar.scss'
 import blueLogo from '../media/pmf-white-bg-logo-high-res.png';
 import { Link } from 'react-router-dom';
+import CloseIcon from '@mui/icons-material/Close';
 
 function Navbar({ }) {
 
-  const activateHamburgerMenu = (e) => {
+  const closeMenu = () => {
+    const menu = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-mid');
+    if (!menu || !navLinks) return;
 
-    // select menu
-    const menu = document.getElementById('hamburger')
+    const barArray = Array.from(menu.children);
+    barArray.forEach(bar => bar.classList.remove('active'));
+    navLinks.classList.remove('active');
+  };
 
+  useEffect(() => {
+    const handleEscape = (e) => {
+      if (e.key === 'Escape') {
+        const navLinks = document.querySelector('.nav-mid');
+        if (navLinks?.classList.contains('active')) closeMenu();
+      }
+    };
+    window.addEventListener('keydown', handleEscape);
+    return () => window.removeEventListener('keydown', handleEscape);
+  }, []);
 
-    const navLinks = document.querySelector('.nav-mid')
+  const activateHamburgerMenu = () => {
+    const menu = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-mid');
+    if (!menu || !navLinks) return;
 
-    // select bars
     const barArray = Array.from(menu.children);
 
-    // toggle activeness
     if (Array.from(barArray[0].classList).includes('active')) {
-      barArray.forEach(bar => bar.classList.remove('active'));
-      navLinks.classList.remove('active')
-      // document.body.style.overflow = "auto"
+      closeMenu();
     } else {
-      barArray.forEach(bar => bar.classList.add('active'))
-      navLinks.classList.add('active')
-      // document.body.style.overflow = "hidden"
+      barArray.forEach(bar => bar.classList.add('active'));
+      navLinks.classList.add('active');
     }
-
-    return
-  }
+  };
 
   return (
     <nav>
@@ -39,11 +51,14 @@ function Navbar({ }) {
         </h4>
       </div>
       <div className="nav-mid">
-        <Link to='/'>HOME</Link>
-        <Link to='/about'>ABOUT</Link>
-        <Link to='/events'>EVENTS</Link>
-        <Link to='/contact'>CONTACT</Link>
-        <Link to='/donate'>DONATE</Link>
+        <button className="menu-close-btn" onClick={closeMenu} aria-label="Close menu">
+          <CloseIcon />
+        </button>
+        <Link to='/' onClick={closeMenu}>HOME</Link>
+        <Link to='/about' onClick={closeMenu}>ABOUT</Link>
+        <Link to='/events' onClick={closeMenu}>EVENTS</Link>
+        <Link to='/contact' onClick={closeMenu}>CONTACT</Link>
+        <Link to='/donate' onClick={closeMenu}>DONATE</Link>
       </div>
       <div className="nav-right">
         <Link to='/donate'>GIVE</Link>
@@ -54,6 +69,12 @@ function Navbar({ }) {
           <span className='bar'></span>
         </button>
       </div>
+      <div
+        className="menu-overlay"
+        onClick={closeMenu}
+        role="button"
+        aria-label="Close menu"
+      />
     </nav>
   )
 }

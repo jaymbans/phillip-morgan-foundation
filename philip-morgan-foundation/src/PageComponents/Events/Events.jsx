@@ -66,16 +66,16 @@ function Events() {
         <div className="previously">
           <h1>Previously...</h1>
           <h2>
-            The Second Annual Philip Morgan Foundation Corn Hole Tournament
+            The Third Annual Philip Morgan Foundation Corn Hole Tournament
           </h2>
           <div className="event-stats">
             <div className="stat">
               <p className="desc">Attendees</p>
-              <p className="data">134</p>
+              <p className="data">125</p>
             </div>
             <div className="stat">
               <p className="desc">Donations</p>
-              <p className="data">$12,000+</p>
+              <p className="data">$15,000+</p>
             </div>
           </div>
           <div className="slider-container container">

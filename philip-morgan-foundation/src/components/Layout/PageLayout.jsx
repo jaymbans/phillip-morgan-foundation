@@ -7,6 +7,7 @@ import EventCountDown from '../EventCountDown/EventCountDown'
 function PageLayout({ children }) {
   return (
     <div id='page-layout'>
+      <EventCountDown />
       <Navbar />
       {children}
       <Footer />

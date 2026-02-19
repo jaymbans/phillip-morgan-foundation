@@ -1,7 +1,7 @@
 @import "../../styles/variables";
 
 #popup-event-container {
-  background: url("../../media/cartoon-sky.jpeg");
+  background: url("../../media/cartoon-bg-purple.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: bottom;
@@ -13,6 +13,7 @@
 
   @media (max-width: 767px) {
     height: auto;
+    background-position: 30% bottom;
 
     nav {
       background: white;
@@ -133,6 +134,15 @@
 
         .rules {
           margin: 10px 0;
+          background: rgba($phil-blue, 0.6);
+          padding: 20px;
+          border-radius: 10px;
+
+          h3.text-primary,
+          h4.text-primary,
+          .text-primary {
+            color: white !important;
+          }
         }
       }
 
@@ -192,6 +202,10 @@
       font-family: $knewave;
       color: $phil-blue;
       text-align: center;
+      margin: 10px 0;
+      background: rgba(white, 0.7);
+      padding: 20px;
+      border-radius: 10px;
 
       @media (max-width: 767px) {
         font-size: 20px;

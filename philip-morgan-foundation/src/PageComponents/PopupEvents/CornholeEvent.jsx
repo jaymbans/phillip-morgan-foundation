@@ -18,10 +18,10 @@ function CornholeEvent() {
             <div className="left">
               <h1>Join Us</h1>
               <h3 className='text-white'>
-                FOR THE 3RD ANNUAL PHILIP MORGAN FOUNDATION CORNHOLE TOURNAMENT
+                FOR THE 4TH ANNUAL PHILIP MORGAN FOUNDATION CORNHOLE TOURNAMENT
               </h3>
               <div className="link-container">
-                <a href={"https://res.cloudinary.com/hxn9dbuhd/image/upload/v1736027321/xxksd4zoasssdcg3yxda.png"}
+                <a href={require("../../media/cornhole-tournament-flyer-2026.jpg")}
                   target='_blank'>
                   Open Flyer
                 </a>
@@ -30,18 +30,18 @@ function CornholeEvent() {
                 </Link>
               </div>
               <p>
-                Indoors at Valley Brook Country Club | March 22 at 1pm
+                Indoors at Valley Brook Country Club | April 18 at 1pm
               </p>
               <small>
                 15 River Vale Road
               </small>
               <small>
-                River Vale, NJ
+                River Vale, NJß
               </small>
               <p>
-                $75 entry - Includes food and Pitchers of Wine & Beer
+                $85 entry - Includes food and Pitchers of Wine & Beer
               </p>
-              <img src={require("../../media/cornhole-qr-code.png")} />
+              <img src={require("../../media/pmf-cornhole-fundraiser-qr-2026.png")} />
               <small>
                 All proceeds go to the Philip Morgan Foundation Inc. 501 (c) (3)
               </small>
@@ -73,7 +73,7 @@ function CornholeEvent() {
             </div>
           </div>
           <div className="phone-number">
-            Text or Call 201 294 3265 to reserve tickets by March 15th
+            Text or Call 201 294 3265 to reserve tickets by April 18th
           </div>
         </main>
       </div>
