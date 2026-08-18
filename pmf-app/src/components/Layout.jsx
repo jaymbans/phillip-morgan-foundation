@@ -1,5 +1,7 @@
 import { Link, Outlet } from 'react-router-dom'
 import { MenuIcon } from 'lucide-react'
+import pmfLogo from '@/assets/media/pmf-white-bg-logo-high-res.png'
+import { cn } from '@/lib/utils'
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -23,8 +25,11 @@ function Layout() {
   return (
     <>
       <header className="flex items-center justify-between gap-4 border-b border-border px-6 py-4">
-        <div className="flex h-10 w-32 items-center justify-center rounded-md bg-muted text-xs font-medium text-muted-foreground">
-          Logo
+        <div className="flex items-center gap-2">
+          <img src={pmfLogo} alt="The Philip Morgan Foundation" className="h-10 w-auto" />
+          <span className="text-sm font-medium text-phil-blue">
+            The Philip Morgan Foundation
+          </span>
         </div>
 
         {/* Desktop nav */}
@@ -33,7 +38,7 @@ function Layout() {
             <NavigationMenuItem>
               <NavigationMenuLink
                 render={<Link to="/" />}
-                className={navigationMenuTriggerStyle()}
+                className={cn(navigationMenuTriggerStyle(), 'text-phil-blue')}
               >
                 Home
               </NavigationMenuLink>
@@ -42,20 +47,26 @@ function Layout() {
             <NavigationMenuItem>
               <NavigationMenuLink
                 render={<Link to="/about" />}
-                className={navigationMenuTriggerStyle()}
+                className={cn(navigationMenuTriggerStyle(), 'text-phil-blue')}
               >
                 About
               </NavigationMenuLink>
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <NavigationMenuTrigger render={<Link to="/events" />}>
+              <NavigationMenuTrigger
+                render={<Link to="/events" />}
+                className="text-phil-blue"
+              >
                 Events
               </NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-48 gap-1">
                   <li>
-                    <NavigationMenuLink render={<Link to="/events" />}>
+                    <NavigationMenuLink
+                      render={<Link to="/events" />}
+                      className="text-phil-blue"
+                    >
                       Events
                     </NavigationMenuLink>
                   </li>
@@ -63,7 +74,7 @@ function Layout() {
                     <NavigationMenuLink
                       render={<span />}
                       aria-disabled="true"
-                      className="pointer-events-none opacity-50"
+                      className="pointer-events-none text-phil-blue opacity-50"
                     >
                       Cornhole Tournaments
                     </NavigationMenuLink>
@@ -75,7 +86,7 @@ function Layout() {
             <NavigationMenuItem>
               <NavigationMenuLink
                 render={<Link to="/contact" />}
-                className={navigationMenuTriggerStyle()}
+                className={cn(navigationMenuTriggerStyle(), 'text-phil-blue')}
               >
                 Contact
               </NavigationMenuLink>
@@ -84,7 +95,7 @@ function Layout() {
             <NavigationMenuItem>
               <NavigationMenuLink
                 render={<Link to="/donate" />}
-                className={navigationMenuTriggerStyle()}
+                className={cn(navigationMenuTriggerStyle(), 'text-phil-blue')}
               >
                 Donate
               </NavigationMenuLink>
@@ -107,37 +118,37 @@ function Layout() {
             <nav className="flex flex-col gap-1 px-4">
               <SheetClose
                 render={<Link to="/" />}
-                className="rounded-lg px-2 py-2 text-sm font-medium hover:bg-muted"
+                className="rounded-lg px-2 py-2 text-sm font-medium text-phil-blue hover:bg-muted"
               >
                 Home
               </SheetClose>
               <SheetClose
                 render={<Link to="/about" />}
-                className="rounded-lg px-2 py-2 text-sm font-medium hover:bg-muted"
+                className="rounded-lg px-2 py-2 text-sm font-medium text-phil-blue hover:bg-muted"
               >
                 About
               </SheetClose>
               <SheetClose
                 render={<Link to="/events" />}
-                className="rounded-lg px-2 py-2 text-sm font-medium hover:bg-muted"
+                className="rounded-lg px-2 py-2 text-sm font-medium text-phil-blue hover:bg-muted"
               >
                 Events
               </SheetClose>
               <span
                 aria-disabled="true"
-                className="rounded-lg px-2 py-2 pl-6 text-sm font-medium text-muted-foreground opacity-50"
+                className="rounded-lg px-2 py-2 pl-6 text-sm font-medium text-phil-blue opacity-50"
               >
                 Cornhole Tournaments
               </span>
               <SheetClose
                 render={<Link to="/contact" />}
-                className="rounded-lg px-2 py-2 text-sm font-medium hover:bg-muted"
+                className="rounded-lg px-2 py-2 text-sm font-medium text-phil-blue hover:bg-muted"
               >
                 Contact
               </SheetClose>
               <SheetClose
                 render={<Link to="/donate" />}
-                className="rounded-lg px-2 py-2 text-sm font-medium hover:bg-muted"
+                className="rounded-lg px-2 py-2 text-sm font-medium text-phil-blue hover:bg-muted"
               >
                 Donate
               </SheetClose>
