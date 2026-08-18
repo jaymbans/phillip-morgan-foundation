@@ -95,9 +95,9 @@ function Layout() {
             <NavigationMenuItem>
               <NavigationMenuLink
                 render={<Link to="/donate" />}
-                className={cn(navigationMenuTriggerStyle(), 'text-phil-blue')}
+                className="rounded-full bg-phil-blue px-4 py-1.5 text-sm font-medium text-white hover:bg-phil-blue/90 hover:text-white focus:bg-phil-blue/90"
               >
-                Donate
+                Give
               </NavigationMenuLink>
             </NavigationMenuItem>
           </NavigationMenuList>
@@ -148,9 +148,9 @@ function Layout() {
               </SheetClose>
               <SheetClose
                 render={<Link to="/donate" />}
-                className="rounded-lg px-2 py-2 text-sm font-medium text-phil-blue hover:bg-muted"
+                className="mt-1 rounded-full bg-phil-blue px-2 py-2 text-center text-sm font-medium text-white hover:bg-phil-blue/90"
               >
-                Donate
+                Give
               </SheetClose>
             </nav>
           </SheetContent>
