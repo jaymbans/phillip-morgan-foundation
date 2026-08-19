@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { CalendarIcon } from 'lucide-react'
+import { CalendarIcon, HeartHandshakeIcon } from 'lucide-react'
 import philFishing from '@/assets/media/phil-fishing.jpg'
 import { Button } from '@/components/ui/button'
 import {
@@ -50,7 +50,10 @@ function Home() {
       <section className="bg-phil-blue px-6 py-16 md:px-12">
         <Card className="mx-auto max-w-3xl border-none bg-transparent text-center ring-0">
           <CardHeader>
-            <CardTitle className="text-xl text-white">Our Mission</CardTitle>
+            <div className="mx-auto flex size-14 items-center justify-center rounded-full bg-white/10">
+              <HeartHandshakeIcon className="size-7 text-white" />
+            </div>
+            <CardTitle className="mt-4 text-xl text-white">Our Mission</CardTitle>
           </CardHeader>
           <CardContent>
             <CardDescription className="text-base leading-relaxed text-white/80">

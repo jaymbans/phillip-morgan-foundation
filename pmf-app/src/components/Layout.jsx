@@ -21,6 +21,7 @@ import {
   SheetTrigger,
 } from '@/components/ui/sheet'
 import { Toaster } from '@/components/ui/sonner'
+import Footer from '@/components/Footer'
 
 function Layout() {
   return (
@@ -163,6 +164,8 @@ function Layout() {
       <main className="mx-auto w-full max-w-[1600px]">
         <Outlet />
       </main>
+
+      <Footer />
 
       <Toaster />
     </>
