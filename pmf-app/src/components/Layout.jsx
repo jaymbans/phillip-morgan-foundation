@@ -59,6 +59,7 @@ function Layout() {
               <NavigationMenuItem>
                 <NavigationMenuTrigger
                   render={<Link to="/events" />}
+                  nativeButton={false}
                   className="text-phil-blue"
                 >
                   Events
@@ -121,18 +122,21 @@ function Layout() {
               <nav className="flex flex-col gap-1 px-4">
                 <SheetClose
                   render={<Link to="/" />}
+                  nativeButton={false}
                   className="rounded-lg px-2 py-2 text-sm font-medium text-phil-blue hover:bg-muted"
                 >
                   Home
                 </SheetClose>
                 <SheetClose
                   render={<Link to="/about" />}
+                  nativeButton={false}
                   className="rounded-lg px-2 py-2 text-sm font-medium text-phil-blue hover:bg-muted"
                 >
                   About
                 </SheetClose>
                 <SheetClose
                   render={<Link to="/events" />}
+                  nativeButton={false}
                   className="rounded-lg px-2 py-2 text-sm font-medium text-phil-blue hover:bg-muted"
                 >
                   Events
@@ -145,12 +149,14 @@ function Layout() {
                 </span>
                 <SheetClose
                   render={<Link to="/contact" />}
+                  nativeButton={false}
                   className="rounded-lg px-2 py-2 text-sm font-medium text-phil-blue hover:bg-muted"
                 >
                   Contact
                 </SheetClose>
                 <SheetClose
                   render={<Link to="/donate" />}
+                  nativeButton={false}
                   className="mt-1 rounded-md bg-phil-blue px-2 py-2 text-center text-sm font-medium text-white hover:bg-phil-blue/90"
                 >
                   Give

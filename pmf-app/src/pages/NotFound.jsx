@@ -35,6 +35,7 @@ function NotFound() {
         <EmptyContent>
           <Button
             render={<Link to="/" />}
+            nativeButton={false}
             className="rounded-full bg-phil-blue px-6 text-white hover:bg-phil-blue/90"
           >
             Back to Home

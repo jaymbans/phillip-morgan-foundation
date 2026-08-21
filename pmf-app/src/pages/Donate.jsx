@@ -49,8 +49,7 @@ function Donate() {
             title="Donation form powered by Zeffy"
             src="https://www.zeffy.com/en-US/embed/donation-form/324a1727-cb81-4b10-ba06-4e0d68fdf08c"
             allow="payment"
-            allowPaymentRequest
-            allowTransparency="true"
+            allowpaymentrequest="true"
             className="h-[700px] w-full rounded-xl border-0 shadow"
           />
         </div>

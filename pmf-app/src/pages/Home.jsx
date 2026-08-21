@@ -40,6 +40,7 @@ function Home() {
           </p>
           <Button
             render={<Link to="/about" />}
+            nativeButton={false}
             size="lg"
             className="rounded-full bg-phil-blue px-6 text-white hover:bg-phil-blue/90"
           >
