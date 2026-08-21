@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { toast } from 'sonner'
 import { MailIcon } from 'lucide-react'
+import { useSeo } from '@/hooks/useSeo'
 import philAndMq from '@/assets/media/phil-and-mq.jpg'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -8,6 +9,12 @@ import { Textarea } from '@/components/ui/textarea'
 import { Field, FieldGroup, FieldLabel } from '@/components/ui/field'
 
 function Contact() {
+  useSeo({
+    title: 'Contact Us',
+    description:
+      'Get in touch with the Philip Morgan Foundation with questions, to get involved, or to learn how we support families in need.',
+  })
+
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
   const [email, setEmail] = useState('')

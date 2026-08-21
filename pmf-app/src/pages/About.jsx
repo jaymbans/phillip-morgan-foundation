@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { toast } from 'sonner'
 import { HeartHandshakeIcon } from 'lucide-react'
+import { useSeo } from '@/hooks/useSeo'
 import philSlide2 from '@/assets/media/phil-slide-2.jpg'
 import philSlide3 from '@/assets/media/phil-slide3.jpg'
 import philSlide4 from '@/assets/media/phil-slide-4.JPG'
@@ -42,6 +43,12 @@ const SOCIAL_LINKS = [
 ]
 
 function About() {
+  useSeo({
+    title: 'About Philip Morgan',
+    description:
+      "Learn about Philip Morgan — Navy veteran, father, and friend — and the mission behind the Philip Morgan Foundation's support for families facing terminal illness.",
+  })
+
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
   const [email, setEmail] = useState('')

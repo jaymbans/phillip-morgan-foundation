@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { CalendarIcon, HeartPulseIcon } from 'lucide-react'
+import { useSeo } from '@/hooks/useSeo'
 import philAndFriends from '@/assets/media/phil-and-friends.jpg'
 import cornholeImg from '@/assets/media/cornhole-img.svg'
 import cht1 from '@/assets/media/cht2024-1.jpg'
@@ -33,6 +34,12 @@ const CAROUSEL_ARROW_CLASS =
   'size-10 border-none bg-phil-blue text-white hover:bg-phil-blue/90 hover:text-white'
 
 function Events() {
+  useSeo({
+    title: 'Events',
+    description:
+      'Join the Philip Morgan Foundation at fundraising events, including our annual Corn Hole Tournament and community blood drives.',
+  })
+
   const [carouselApi, setCarouselApi] = useState(null)
 
   useEffect(() => {

@@ -1,9 +1,16 @@
 import { HeartHandshakeIcon } from 'lucide-react'
+import { useSeo } from '@/hooks/useSeo'
 import pmfQrDonate from '@/assets/media/pmf-qr-donate.png'
 import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
 
 function Donate() {
+  useSeo({
+    title: 'Donate',
+    description:
+      'Support families facing the hardships of terminal illness. Donate to the Philip Morgan Foundation by QR code or secure online form.',
+  })
+
   return (
     <div className="flex flex-col">
       <section className="px-6 py-16 text-center md:px-12">

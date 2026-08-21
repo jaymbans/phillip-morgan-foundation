@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { CompassIcon } from 'lucide-react'
+import { useSeo } from '@/hooks/useSeo'
 import { Button } from '@/components/ui/button'
 import {
   Empty,
@@ -11,6 +12,12 @@ import {
 } from '@/components/ui/empty'
 
 function NotFound() {
+  useSeo({
+    title: 'Page Not Found',
+    description: "The page you're looking for doesn't exist or may have been moved.",
+    noindex: true,
+  })
+
   return (
     <section className="flex min-h-[60vh] items-center justify-center px-6 py-16 md:px-12">
       <Empty className="max-w-md border-none">

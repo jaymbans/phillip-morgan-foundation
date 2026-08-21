@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { CalendarIcon, HeartHandshakeIcon } from 'lucide-react'
+import { useSeo } from '@/hooks/useSeo'
 import philFishing from '@/assets/media/phil-fishing.jpg'
 import { Button } from '@/components/ui/button'
 import {
@@ -18,6 +19,12 @@ import {
 } from '@/components/ui/empty'
 
 function Home() {
+  useSeo({
+    title: 'Philip Morgan Foundation',
+    description:
+      "Non-profit providing financial support and assistance to families facing the hardships of a loved one's terminal or devastating illness. Over $55,000 donated to date.",
+  })
+
   return (
     <div className="flex flex-col">
       {/* Hero */}
