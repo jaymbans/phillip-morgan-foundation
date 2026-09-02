@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
-import { CalendarIcon, HeartPulseIcon } from 'lucide-react'
+import { HeartPulseIcon } from 'lucide-react'
 import { useSeo } from '@/hooks/useSeo'
+import UpcomingEvents from '@/components/UpcomingEvents'
 import philAndFriends from '@/assets/media/phil-and-friends.jpg'
 import cornholeImg from '@/assets/media/cornhole-img.svg'
 import cht1 from '@/assets/media/cht2024-1.jpg'
@@ -13,13 +14,6 @@ import cht7 from '@/assets/media/cht2024-7.jpg'
 import cht8 from '@/assets/media/cht2024-8.jpg'
 import cht9 from '@/assets/media/cht2024-9.jpg'
 import cht10 from '@/assets/media/cht2024-10.jpg'
-import {
-  Empty,
-  EmptyDescription,
-  EmptyHeader,
-  EmptyMedia,
-  EmptyTitle,
-} from '@/components/ui/empty'
 import {
   Carousel,
   CarouselContent,
@@ -76,17 +70,7 @@ function Events() {
           <h2 className="mb-14 text-2xl leading-snug font-medium text-phil-blue">
             Upcoming Events
           </h2>
-          <Empty className="border bg-background">
-            <EmptyHeader>
-              <EmptyMedia variant="icon">
-                <CalendarIcon />
-              </EmptyMedia>
-              <EmptyTitle>No Upcoming Events</EmptyTitle>
-              <EmptyDescription>
-                Check back soon — new events will be posted here.
-              </EmptyDescription>
-            </EmptyHeader>
-          </Empty>
+          <UpcomingEvents emptyClassName="border bg-background" />
         </div>
       </section>
 

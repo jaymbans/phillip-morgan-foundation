@@ -22,10 +22,13 @@ import {
 } from '@/components/ui/sheet'
 import { Toaster } from '@/components/ui/sonner'
 import Footer from '@/components/Footer'
+import EventBanner from '@/components/EventBanner'
 
 function Layout() {
   return (
     <>
+      <EventBanner />
+
       <header className="border-b border-border">
         <div className="mx-auto flex w-full max-w-[1600px] items-center justify-between gap-4 px-6 py-4">
           <div className="flex items-center gap-2">

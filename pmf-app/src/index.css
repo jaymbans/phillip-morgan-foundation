@@ -85,6 +85,43 @@
   box-sizing: border-box;
 }
 
+/* Event banner: a slow shimmer sweep plus a soft pulse on the CTA so the
+   announcement catches the eye without being distracting. */
+@keyframes banner-shimmer {
+  0% {
+    transform: translateX(-130%);
+  }
+  50%,
+  100% {
+    transform: translateX(260%);
+  }
+}
+
+@keyframes banner-cta-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgb(255 255 255 / 0.55);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgb(255 255 255 / 0);
+  }
+}
+
+.event-banner-shimmer {
+  animation: banner-shimmer 7s ease-in-out infinite;
+}
+
+.event-banner-cta {
+  animation: banner-cta-pulse 2.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .event-banner-shimmer,
+  .event-banner-cta {
+    animation: none;
+  }
+}
+
 @layer base {
   h1 {
     font-family: var(--font-heading);

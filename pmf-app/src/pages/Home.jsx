@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { CalendarIcon, HeartHandshakeIcon } from 'lucide-react'
+import { HeartHandshakeIcon } from 'lucide-react'
 import { useSeo } from '@/hooks/useSeo'
 import philFishing from '@/assets/media/phil-fishing.jpg'
 import { Button } from '@/components/ui/button'
@@ -10,13 +10,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card'
-import {
-  Empty,
-  EmptyDescription,
-  EmptyHeader,
-  EmptyMedia,
-  EmptyTitle,
-} from '@/components/ui/empty'
+import UpcomingEvents from '@/components/UpcomingEvents'
 
 function Home() {
   useSeo({
@@ -80,17 +74,7 @@ function Home() {
           <h2 className="mb-14 text-2xl leading-snug font-medium text-phil-blue">
             Upcoming Events
           </h2>
-          <Empty className="border">
-            <EmptyHeader>
-              <EmptyMedia variant="icon">
-                <CalendarIcon />
-              </EmptyMedia>
-              <EmptyTitle>No Upcoming Events</EmptyTitle>
-              <EmptyDescription>
-                Check back soon — new events will be posted here.
-              </EmptyDescription>
-            </EmptyHeader>
-          </Empty>
+          <UpcomingEvents />
         </div>
       </section>
     </div>
