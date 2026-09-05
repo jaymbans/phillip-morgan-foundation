@@ -125,16 +125,16 @@ function Events() {
             Past Event
           </p>
           <h2 className="mt-2 text-2xl leading-snug font-medium text-phil-blue md:text-3xl">
-            Third Annual Philip Morgan Foundation Corn Hole Tournament
+            Fourth Annual Philip Morgan Foundation Corn Hole Tournament
           </h2>
 
           <div className="mt-8 flex flex-wrap justify-center gap-12">
             <div>
-              <p className="text-3xl font-medium text-phil-blue">125</p>
+              <p className="text-3xl font-medium text-phil-blue">100</p>
               <p className="text-sm text-muted-foreground">Attendees</p>
             </div>
             <div>
-              <p className="text-3xl font-medium text-phil-blue">$15,000+</p>
+              <p className="text-3xl font-medium text-phil-blue">$12,000+</p>
               <p className="text-sm text-muted-foreground">Raised in donations</p>
             </div>
           </div>
@@ -146,7 +146,7 @@ function Events() {
                   <CarouselItem key={src}>
                     <img
                       src={src}
-                      alt={`Third Annual Corn Hole Tournament photo ${index + 1}`}
+                      alt={`Fourth Annual Corn Hole Tournament photo ${index + 1}`}
                       className="aspect-[4/3] w-full rounded-xl object-cover shadow"
                     />
                   </CarouselItem>
